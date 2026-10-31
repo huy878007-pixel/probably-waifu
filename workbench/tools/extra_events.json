@@ -1,0 +1,163 @@
+{
+ "wild": [
+  {
+   "id": "wildMarketplaceIntro",
+   "sprite": "joe",
+   "stage": "常规",
+   "canArrest": false,
+   "lines": [
+    {
+     "key": "dialog_marketplace_intro_1",
+     "zh": "你好！",
+     "en": "Hello!"
+    },
+    {
+     "key": "dialog_marketplace_intro_2",
+     "zh": "希望你一切都好！",
+     "en": "Hope you're doing well!"
+    },
+    {
+     "key": "dialog_marketplace_intro_3",
+     "zh": "总之，不知道你有没有注意到，",
+     "en": "Anyway, I don't know if you noticed,"
+    },
+    {
+     "key": "dialog_marketplace_intro_4",
+     "zh": "我可以帮你接入公共市场委托系统。",
+     "en": "but I can get you access to the public Marketplace Request system."
+    },
+    {
+     "key": "dialog_marketplace_intro_5",
+     "zh": "这样你就能直接完成空间站居民发布的委托，",
+     "en": "You can directly fulfill requests from station residents,"
+    },
+    {
+     "key": "dialog_marketplace_intro_6",
+     "zh": "你是做生意的，我强烈建议你试试！",
+     "en": "and I highly recommend it for a business owner like you!"
+    },
+    {
+     "key": "dialog_marketplace_intro_7",
+     "zh": "想看看吗？",
+     "en": "Wanna take a look?"
+    },
+    {
+     "key": "dialog_marketplace_intro_8",
+     "zh": "别忘了，需要帮助时随时都可以联系我。",
+     "en": "Don't forget you can call me anytime if you need help."
+    }
+   ]
+  },
+  {
+   "id": "wild2",
+   "sprite": "joe",
+   "stage": "常规",
+   "canArrest": false,
+   "lines": [
+    {
+     "key": "dialog_network_intro_1",
+     "zh": "又是我！",
+     "en": "Me again!"
+    },
+    {
+     "key": "dialog_network_intro_2",
+     "zh": "看来你的生意做得很不错嘛！",
+     "en": "Looks like your business is doing well!"
+    },
+    {
+     "key": "dialog_network_intro_3",
+     "zh": "你也知道，在这下边啊……",
+     "en": "You know, down here..."
+    },
+    {
+     "key": "dialog_network_intro_4",
+     "zh": "最重要的是你的人脉。",
+     "en": "It's all about who you know."
+    },
+    {
+     "key": "dialog_network_intro_5",
+     "zh": "当然，只要钱给到位了，那都不叫事。",
+     "en": "For the right price, of course."
+    },
+    {
+     "key": "dialog_network_intro_6",
+     "zh": "我可以把你介绍给我的联系人。",
+     "en": "I can introduce you to my contacts."
+    },
+    {
+     "key": "dialog_network_intro_7",
+     "zh": "供货商、线人，甚至是治安部警官！",
+     "en": "Suppliers, Informants, even Security Officers!"
+    },
+    {
+     "key": "dialog_network_intro_8",
+     "zh": "以下是我能为你做的事……",
+     "en": "Here is what I can do for you..."
+    }
+   ]
+  },
+  {
+   "id": "insuranceIntroduction",
+   "sprite": "joe",
+   "stage": "常规",
+   "canArrest": false,
+   "lines": [
+    {
+     "key": "dialog_insurance_1",
+     "zh": "你好啊！<wave a=0.25>欢迎来到我们这个小街区！</wave>",
+     "en": "Hello! <wave a=0.25>Welcome to our little neighborhood!</wave>"
+    },
+    {
+     "key": "dialog_insurance_2",
+     "zh": "我的名字是<slide a=0.25>乔·王尔德！</slide>",
+     "en": "My name is <slide a=0.25> Joe Wild! </slide>"
+    },
+    {
+     "key": "dialog_insurance_3",
+     "zh": "想必你多少也有所耳闻……",
+     "en": "As you might already know..."
+    },
+    {
+     "key": "dialog_insurance_4",
+     "zh": "这个街区虽然迷人，但可不怎么太平。",
+     "en": "This sector, though charming, is not the safest."
+    },
+    {
+     "key": "dialog_insurance_5",
+     "zh": "即便放在整个下层区，这里也算不上安全……",
+     "en": "Even among the Lower Levels..."
+    },
+    {
+     "key": "dialog_insurance_6",
+     "zh": "这也是我开设<i>保险服务</i>的原因！",
+     "en": "That's why I run an <i>insurance service!</i>"
+    },
+    {
+     "key": "dialog_insurance_7",
+     "zh": "——专为像你这样的做小本生意的老板服务！",
+     "en": "—for small business owners such like yourself—"
+    },
+    {
+     "key": "dialog_insurance_8",
+     "zh": "这是一项按日计费服务——",
+     "en": "It is a daily subscription service—"
+    },
+    {
+     "key": "dialog_insurance_9",
+     "zh": "——发生盗窃时，为你所有的商品提供保险！",
+     "en": "—to insure all of your goods in case of theft!"
+    },
+    {
+     "key": "dialog_insurance_10",
+     "zh": "你可以在睡觉前选择加入或退出这项服务。",
+     "en": "You can opt in or out of the service before you sleep."
+    },
+    {
+     "key": "dialog_insurance_11",
+     "zh": "行了，我就说这么多。祝你好运！",
+     "en": "Anyways that's all from me. Good luck!"
+    }
+   ]
+  }
+ ]
+}

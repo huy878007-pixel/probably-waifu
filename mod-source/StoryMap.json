@@ -1,0 +1,2206 @@
+{
+ "version": 1,
+ "lines": {
+  "dialog_lun_visit_1": "01_伦警官/base__lun.png",
+  "dialog_lun_visit_2": "01_伦警官/base__lun.png",
+  "dialog_lun_visit_3": "01_伦警官/base__lun.png",
+  "dialog_lun_visit_wrong_item": "01_伦警官/base__lun.png",
+  "dialog_lun_visit_right_item": "01_伦警官/base__lun.png",
+  "dialog_lun_visit_accept": "01_伦警官/base__lun.png",
+  "dialog_lun_shot_1": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+  "dialog_lun_shot_2": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+  "dialog_lun_shot_3": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+  "dialog_lun_shot_4": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+  "dialog_lun_shot_accept": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+  "dialog_lun_shot_wrong_item": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+  "dialog_lun_shot_contraband": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+  "dialog_lun_shot_right_item": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+  "dialog_lun_duty_1": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+  "dialog_lun_duty_2": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+  "dialog_lun_duty_3": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+  "dialog_lun_duty_4": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+  "dialog_lun_duty_5": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+  "dialog_lun_duty_6": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+  "dialog_lun_duty_accept": "01_伦警官/base__lun.png",
+  "dialog_lun_duty_black_injector_thanks": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+  "dialog_lun_duty_wrong_item": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__03_否认上瘾.png",
+  "dialog_lun_duty_blackinjector_no": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__03_否认上瘾.png",
+  "dialog_lun_duty_blackinjector_no2": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__03_否认上瘾.png",
+  "dialog_lun_duty_contraband": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__03_否认上瘾.png",
+  "dialog_lun_duty_right_item": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+  "dialog_lun_surplus_1": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__04_倒卖装备.png",
+  "dialog_lun_surplus_2": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__04_倒卖装备.png",
+  "dialog_lun_surplus_3": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__04_倒卖装备.png",
+  "dialog_lun_surplus_4": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__04_倒卖装备.png",
+  "dialog_lun_surplus_5": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__04_倒卖装备.png",
+  "dialog_lun_surplus_accept": "01_伦警官/base__lun.png",
+  "dialog_lun_surplus_arrest_client_1": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__06_被捕辩解.png",
+  "dialog_lun_surplus_arrest_client_2": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__06_被捕辩解.png",
+  "dialog_lun_inspect_1": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__05_突击盘查.png",
+  "dialog_lun_inspect_2": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__05_突击盘查.png",
+  "dialog_lun_inspect_drugs_1": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__05_突击盘查.png",
+  "dialog_lun_inspect_drugs_2": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__05_突击盘查.png",
+  "dialog_lun_inspect_clear": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+  "dialog_lun_inspect_arrest_client_1": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__06_被捕辩解.png",
+  "dialog_lun_inspect_arrest_client_2": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__06_被捕辩解.png",
+  "dialog_inventor_greet_1": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_greet_2": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_greet_3": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_greet_4": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_greet_5": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_offer_1": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__03_得意展示.png",
+  "dialog_inventor_offer_2": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_offer_3": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_offer_4": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_offer_5": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__05_冒汗露馅.png",
+  "dialog_inventor_back": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_storage_1": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_storage_2": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__06_订单无人领取.png",
+  "dialog_inventor_storage_3": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__06_订单无人领取.png",
+  "dialog_inventor_storage_4": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__06_订单无人领取.png",
+  "dialog_inventor_intro_1": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_intro_2": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_intro_3": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__03_得意展示.png",
+  "dialog_inventor_intro_4": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_intro_5": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_intro_6": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__05_冒汗露馅.png",
+  "dialog_inventor_intro_7": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__02_认真讲解.png",
+  "dialog_inventor_intro_8": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__02_认真讲解.png",
+  "dialog_inventor_intro_9": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__02_认真讲解.png",
+  "dialog_inventor_intro_10": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__02_认真讲解.png",
+  "dialog_inventor_intro_11": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_accept_1": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_accept_2": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__03_得意展示.png",
+  "dialog_inventor_accept_3": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_accept_4": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_accept_5": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_accept_6": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_module_1": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__03_得意展示.png",
+  "dialog_inventor_module_2": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__02_认真讲解.png",
+  "dialog_inventor_module_3": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__02_认真讲解.png",
+  "dialog_inventor_module_4": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_module_accept_1": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_module_accept_2": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png",
+  "dialog_inventor_module_accept_3": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_inventor_module_accept_4": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__04_精明推销.png",
+  "dialog_landlord_rent_paid_1": "03_房东/房东_收租与生意六格_v1__02_核对账单.png",
+  "dialog_landlord_rent_paid_2": "03_房东/房东_收租与生意六格_v1__02_核对账单.png",
+  "dialog_landlord_no_grace_1": "03_房东/房东_收租与生意六格_v1__04_准备驱逐.png",
+  "dialog_landlord_no_grace_2": "03_房东/房东_收租与生意六格_v1__04_准备驱逐.png",
+  "dialog_landlord_grace_1": "03_房东/房东_收租与生意六格_v1__03_最后宽限.png",
+  "dialog_landlord_grace_2": "03_房东/房东_收租与生意六格_v1__03_最后宽限.png",
+  "dialog_landlord_grace_3": "03_房东/房东_收租与生意六格_v1__03_最后宽限.png",
+  "dialog_landlord_grace_4": "03_房东/房东_收租与生意六格_v1__03_最后宽限.png",
+  "dialog_landlord_grace_5": "03_房东/房东_收租与生意六格_v1__03_最后宽限.png",
+  "dialog_landlord_buyout_1": "03_房东/房东_收租与生意六格_v1__06_认可买下店铺.png",
+  "dialog_landlord_buyout_2": "03_房东/房东_收租与生意六格_v1__06_认可买下店铺.png",
+  "dialog_landlord_buyout_3": "03_房东/房东_收租与生意六格_v1__06_认可买下店铺.png",
+  "dialog_landlord_buyout_4": "03_房东/房东_收租与生意六格_v1__06_认可买下店铺.png",
+  "dialog_landlord_vending_1": "03_房东/房东_收租与生意六格_v1__05_精明推销.png",
+  "dialog_landlord_vending_2": "03_房东/房东_收租与生意六格_v1__05_精明推销.png",
+  "dialog_landlord_vending_3": "03_房东/房东_收租与生意六格_v1__05_精明推销.png",
+  "dialog_landlord_vending_last": "03_房东/房东_收租与生意六格_v1__05_精明推销.png",
+  "dialog_landlord_vending_yes_1": "03_房东/房东_收租与生意六格_v1__05_精明推销.png",
+  "dialog_landlord_vending_yes_2": "03_房东/base__landlord.png",
+  "dialog_landlord_vending_no_1": "03_房东/base__landlord.png",
+  "dialog_landlord_vending_no_2": "03_房东/base__landlord.png",
+  "dialog_landlord_ws_1": "03_房东/房东_收租与生意六格_v1__05_精明推销.png",
+  "dialog_landlord_ws_2": "03_房东/房东_收租与生意六格_v1__05_精明推销.png",
+  "dialog_landlord_ws_3": "03_房东/房东_收租与生意六格_v1__05_精明推销.png",
+  "dialog_landlord_ws_4": "03_房东/房东_收租与生意六格_v1__05_精明推销.png",
+  "dialog_georgio_serpico_letter_1": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio_serpico_letter_2": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio_serpico_letter_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__06_递信心虚.png",
+  "dialog_georgio_intro_1": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio_intro_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_intro_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_intro_4": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_intro_5": "04_乔治奥/乔治奥_生意与小聪明六格_v1__02_夸大宝物.png",
+  "dialog_georgio_intro_accept": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_intro_done": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio_arrest_client_1": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__05_被捕慌张.png",
+  "dialog_georgio_intro2_1": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio_intro2_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_intro2_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_intro2_4": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_intro2_5": "04_乔治奥/乔治奥_生意与小聪明六格_v1__03_瓶装商品推销.png",
+  "dialog_georgio_backpack_1": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio_backpack_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_backpack_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_assist_5": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_assist_1": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_assist_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_assist_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_assist_4": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_assist_accept_1": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_assist_accept_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_assist_decline_1": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__02_被拒失落.png",
+  "dialog_georgio2_1": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio2_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__04_保真保证.png",
+  "dialog_georgio2_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__04_保真保证.png",
+  "dialog_georgio2_4": "04_乔治奥/乔治奥_生意与小聪明六格_v1__04_保真保证.png",
+  "dialog_georgio2_accept": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio2_done": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio2_arrest_client": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__05_被捕慌张.png",
+  "dialog_georgio3_1": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio3_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio3_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio3_5": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio3_accept": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio3_done_1": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio3_done_2": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio3_arrest_client": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__05_被捕慌张.png",
+  "dialog_georgio_luck_intro_1": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_luck_intro_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_luck_intro_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__03_瓶装商品推销.png",
+  "dialog_georgio_luck_sale_1": "04_乔治奥/乔治奥_生意与小聪明六格_v1__03_瓶装商品推销.png",
+  "dialog_georgio_luck_sale_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__03_瓶装商品推销.png",
+  "dialog_georgio4_1": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio4_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio4_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio4_4": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio4_6": "04_乔治奥/乔治奥_生意与小聪明六格_v1__05_藏住货源.png",
+  "dialog_georgio4_7": "04_乔治奥/乔治奥_生意与小聪明六格_v1__05_藏住货源.png",
+  "dialog_georgio4_8": "04_乔治奥/乔治奥_生意与小聪明六格_v1__05_藏住货源.png",
+  "dialog_georgio4_accept": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio4_done_1": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio4_done_2": "04_乔治奥/base__Georgio.png",
+  "dialog_georgio4_arrest_client": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__06_怀疑被出卖.png",
+  "dialog_georgio_loan_5": "04_乔治奥/review__借钱拘谨.png",
+  "dialog_georgio_loan_1": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_loan_2": "04_乔治奥/review__借钱拘谨.png",
+  "dialog_georgio_loan_3": "04_乔治奥/review__借钱拘谨.png",
+  "dialog_georgio_loan_4": "04_乔治奥/review__借钱拘谨.png",
+  "dialog_georgio_loan_accept_small_1": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__03_收到帮助.png",
+  "dialog_georgio_loan_accept_small_2": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__03_收到帮助.png",
+  "dialog_georgio_loan_promise_1": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__03_收到帮助.png",
+  "dialog_georgio_loan_promise_2": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__03_收到帮助.png",
+  "dialog_georgio_loan_accept_large_1": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__03_收到帮助.png",
+  "dialog_georgio_loan_accept_large_2": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__03_收到帮助.png",
+  "dialog_georgio_loan_decline_1": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__02_被拒失落.png",
+  "dialog_georgio_loan_decline_2": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__02_被拒失落.png",
+  "dialog_georgio_loan_decline_3": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__02_被拒失落.png",
+  "dialog_georgio_loan_arrest_client": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__05_被捕慌张.png",
+  "dialog_georgio_nuclear_1": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_nuclear_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_nuclear_3": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_nuclear_4": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_payback_1": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_payback_2": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_georgio_payback_3": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__04_自豪还钱.png",
+  "dialog_georgio_payback_4": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__04_自豪还钱.png",
+  "dialog_georgio_payback_done": "04_乔治奥/乔治奥_生意与小聪明六格_v1__01_得意自荐.png",
+  "dialog_eleanor_intro_1": "05_埃莉诺/埃莉诺_维持体面六格_v1__01_高傲打量.png",
+  "dialog_eleanor_intro_2": "05_埃莉诺/埃莉诺_维持体面六格_v1__01_高傲打量.png",
+  "dialog_eleanor_intro_3": "05_埃莉诺/埃莉诺_维持体面六格_v1__01_高傲打量.png",
+  "dialog_eleanor_intro_4": "05_埃莉诺/埃莉诺_维持体面六格_v1__01_高傲打量.png",
+  "dialog_eleanor_intro_5": "05_埃莉诺/埃莉诺_维持体面六格_v1__03_维护母亲.png",
+  "dialog_eleanor_intro_6": "05_埃莉诺/埃莉诺_维持体面六格_v1__03_维护母亲.png",
+  "dialog_eleanor_intro_7": "05_埃莉诺/埃莉诺_维持体面六格_v1__02_挑剔购物.png",
+  "dialog_eleanor2_1": "05_埃莉诺/埃莉诺_维持体面六格_v1__04_被困烦闷.png",
+  "dialog_eleanor2_2": "05_埃莉诺/埃莉诺_维持体面六格_v1__04_被困烦闷.png",
+  "dialog_eleanor2_3": "05_埃莉诺/埃莉诺_维持体面六格_v1__04_被困烦闷.png",
+  "dialog_eleanor2_4": "05_埃莉诺/埃莉诺_维持体面六格_v1__04_被困烦闷.png",
+  "dialog_eleanor2_5": "05_埃莉诺/埃莉诺_维持体面六格_v1__04_被困烦闷.png",
+  "dialog_eleanor2_6": "05_埃莉诺/埃莉诺_维持体面六格_v1__04_被困烦闷.png",
+  "dialog_eleanor2_7": "05_埃莉诺/埃莉诺_维持体面六格_v1__04_被困烦闷.png",
+  "dialog_eleanor2_8": "05_埃莉诺/埃莉诺_维持体面六格_v1__05_强撑希望.png",
+  "dialog_eleanor2_9": "05_埃莉诺/埃莉诺_维持体面六格_v1__04_被困烦闷.png",
+  "dialog_eleanor3_1": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor3_2": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor3_3": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor3_no_family": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor3_4": "05_埃莉诺/埃莉诺_维持体面六格_v1__05_强撑希望.png",
+  "dialog_eleanor3_5": "05_埃莉诺/埃莉诺_维持体面六格_v1__05_强撑希望.png",
+  "dialog_eleanor3_6": "05_埃莉诺/埃莉诺_维持体面六格_v1__05_强撑希望.png",
+  "dialog_eleanor3_7": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor3_8": "05_埃莉诺/埃莉诺_维持体面六格_v1__06_不舍变卖.png",
+  "dialog_eleanor4_1": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__01_崩溃诉说.png",
+  "dialog_eleanor4_2": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__01_崩溃诉说.png",
+  "dialog_eleanor4_3": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__01_崩溃诉说.png",
+  "dialog_eleanor4_4": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__01_崩溃诉说.png",
+  "dialog_eleanor4_5": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__01_崩溃诉说.png",
+  "dialog_eleanor4_6": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__01_崩溃诉说.png",
+  "dialog_eleanor4_7": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__01_崩溃诉说.png",
+  "dialog_eleanor4_8": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__02_难堪求食.png",
+  "dialog_eleanor4_9": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__02_难堪求食.png",
+  "dialog_eleanor4_accept": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__03_含泪感谢.png",
+  "dialog_eleanor5_1": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_2": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_3": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_4": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_5": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_6": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_7": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_8": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_9": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_10": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor5_11": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor6_1": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor6_2": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__06_认真攒钱.png",
+  "dialog_eleanor6_3": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__06_认真攒钱.png",
+  "dialog_eleanor6_4": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__06_认真攒钱.png",
+  "dialog_eleanor6_5": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__05_展示收获.png",
+  "dialog_eleanor6_6": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__06_认真攒钱.png",
+  "dialog_eleanor_scav_1": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor_scav_2": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor_scav_3": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__05_展示收获.png",
+  "dialog_eleanor7_1": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_2": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_3": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_4": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_5": "05_埃莉诺/埃莉诺_真相与选择六格_v1__04_两难求助.png",
+  "dialog_eleanor7_6": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_7": "05_埃莉诺/埃莉诺_真相与选择六格_v1__02_想起母亲.png",
+  "dialog_eleanor7_8": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_9": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_10": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_11": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_12": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor7_13": "05_埃莉诺/埃莉诺_真相与选择六格_v1__03_发现研究真相.png",
+  "dialog_eleanor8_return_1": "05_埃莉诺/埃莉诺_真相与选择六格_v1__02_想起母亲.png",
+  "dialog_eleanor8_return_2": "05_埃莉诺/埃莉诺_真相与选择六格_v1__02_想起母亲.png",
+  "dialog_eleanor8_leak_1": "05_埃莉诺/base__eleanor_scav.png",
+  "dialog_eleanor8_leak_2": "05_埃莉诺/base__eleanor_scav.png",
+  "dialog_eleanor8_leak_3": "05_埃莉诺/base__eleanor_scav.png",
+  "dialog_eleanor8_4": "05_埃莉诺/埃莉诺_真相与选择六格_v1__04_两难求助.png",
+  "dialog_eleanor8_1": "05_埃莉诺/埃莉诺_真相与选择六格_v1__04_两难求助.png",
+  "dialog_eleanor8_2": "05_埃莉诺/埃莉诺_真相与选择六格_v1__04_两难求助.png",
+  "dialog_eleanor8_3": "05_埃莉诺/埃莉诺_真相与选择六格_v1__04_两难求助.png",
+  "dialog_eleanor9_free_1": "05_埃莉诺/埃莉诺_真相与选择六格_v1__05_团聚释然.png",
+  "dialog_eleanor9_free_2": "05_埃莉诺/埃莉诺_真相与选择六格_v1__05_团聚释然.png",
+  "dialog_eleanor9_free_3": "05_埃莉诺/埃莉诺_真相与选择六格_v1__05_团聚释然.png",
+  "dialog_eleanor9_thanks": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__04_自然招呼.png",
+  "dialog_eleanor9_free_gift": "05_埃莉诺/埃莉诺_真相与选择六格_v1__05_团聚释然.png",
+  "dialog_eleanor9_free_gift_2": "05_埃莉诺/埃莉诺_真相与选择六格_v1__05_团聚释然.png",
+  "dialog_eleanor9_free_bye": "05_埃莉诺/埃莉诺_真相与选择六格_v1__05_团聚释然.png",
+  "dialog_eleanor9_farewell_1": "05_埃莉诺/埃莉诺_真相与选择六格_v1__05_团聚释然.png",
+  "dialog_eleanor9_farewell_2": "05_埃莉诺/埃莉诺_真相与选择六格_v1__05_团聚释然.png",
+  "dialog_eleanor9_farewell_3": "05_埃莉诺/埃莉诺_真相与选择六格_v1__05_团聚释然.png",
+  "dialog_eleanor9_rev_1": "05_埃莉诺/埃莉诺_革命军六格_v1__01_再次见面.png",
+  "dialog_eleanor9_rev_2": "05_埃莉诺/埃莉诺_革命军六格_v1__02_母亲遇害.png",
+  "dialog_eleanor9_rev_3": "05_埃莉诺/埃莉诺_革命军六格_v1__03_加入革命军.png",
+  "dialog_eleanor9_rev_gift": "05_埃莉诺/埃莉诺_革命军六格_v1__04_交出生日礼物.png",
+  "dialog_eleanor9_rev_gun": "05_埃莉诺/埃莉诺_革命军六格_v1__05_索要武器.png",
+  "dialog_eleanor9_rev_bye": "05_埃莉诺/埃莉诺_革命军六格_v1__06_道谢告别.png",
+  "dialog_eleanor6_to_go": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__06_认真攒钱.png",
+  "dialog_eleanor_scav_enough_1": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__06_认真攒钱.png",
+  "dialog_eleanor_scav_enough_2": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__06_认真攒钱.png",
+  "dialog_eleanor_scav_all_done": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__06_认真攒钱.png",
+  "dialog_eleanor_warned_1": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor_warned_2": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor_warned_3": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor_warned_4": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor_warned_5": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor_warned_leave": "05_埃莉诺/base__eleanor2.png",
+  "dialog_eleanor_arrest_client_1": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__02_难堪求食.png",
+  "dialog_eleanor_arrest_client_2": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__02_难堪求食.png",
+  "dialog_mentor_afterhours_1": "06_导师/导师_日常指导六格_v1__02_温和认可.png",
+  "dialog_mentor_afterhours_2": "06_导师/导师_日常指导六格_v1__01_神秘日常.png",
+  "dialog_mentor_afterhours_3": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_afterhours_4": "06_导师/导师_日常指导六格_v1__05_轻微揶揄.png",
+  "dialog_mentor_afterhours_5": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_afterhours_6": "06_导师/导师_日常指导六格_v1__06_无奈提醒.png",
+  "dialog_mentor_afterhours_7": "06_导师/导师_日常指导六格_v1__02_温和认可.png",
+  "dialog_mentor_intro_1": "06_导师/导师_日常指导六格_v1__01_神秘日常.png",
+  "dialog_mentor_intro_2": "06_导师/导师_日常指导六格_v1__05_轻微揶揄.png",
+  "dialog_mentor_intro_3": "06_导师/导师_日常指导六格_v1__02_温和认可.png",
+  "dialog_mentor_intro_4": "06_导师/导师_日常指导六格_v1__04_递出便签.png",
+  "dialog_mentor_intro_5": "06_导师/导师_日常指导六格_v1__04_递出便签.png",
+  "dialog_mentor_intro_6": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_intro_7": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_intro_8": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_intro_9": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_intro_10": "06_导师/导师_日常指导六格_v1__05_轻微揶揄.png",
+  "dialog_mentor_intro2_1": "06_导师/导师_日常指导六格_v1__06_无奈提醒.png",
+  "dialog_mentor_intro2_2": "06_导师/导师_情报剧情六格_v1__01_透露情报.png",
+  "dialog_mentor_intro2_3": "06_导师/导师_情报剧情六格_v1__01_透露情报.png",
+  "dialog_mentor_intro2_4": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_intro2_5": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_intro2_6": "06_导师/导师_情报剧情六格_v1__02_心照不宣.png",
+  "dialog_mentor_intro2_7": "06_导师/导师_情报剧情六格_v1__04_从容保证.png",
+  "dialog_mentor_shotgun_1": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_shotgun_2": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_shotgun_3": "06_导师/导师_情报剧情六格_v1__06_郑重托付.png",
+  "dialog_mentor_shotgun_4": "06_导师/导师_情报剧情六格_v1__05_危险预警.png",
+  "dialog_mentor_shotgun_5": "06_导师/导师_情报剧情六格_v1__05_危险预警.png",
+  "dialog_mentor_shotgun_6": "06_导师/导师_情报剧情六格_v1__05_危险预警.png",
+  "dialog_mentor_shotgun_7": "06_导师/导师_情报剧情六格_v1__05_危险预警.png",
+  "dialog_mentor_shotgun_8": "06_导师/导师_情报剧情六格_v1__04_从容保证.png",
+  "dialog_mentor_shotgun_9": "06_导师/导师_情报剧情六格_v1__05_危险预警.png",
+  "dialog_mentor_shotgun_10": "06_导师/导师_情报剧情六格_v1__05_危险预警.png",
+  "dialog_mentor_shotgun_11": "06_导师/导师_情报剧情六格_v1__06_郑重托付.png",
+  "dialog_mentor_visual_1": "06_导师/导师_情报剧情六格_v1__01_透露情报.png",
+  "dialog_mentor_visual_2": "06_导师/导师_情报剧情六格_v1__01_透露情报.png",
+  "dialog_mentor_visual_3": "06_导师/导师_情报剧情六格_v1__06_郑重托付.png",
+  "dialog_mentor_visual_4": "06_导师/导师_情报剧情六格_v1__01_透露情报.png",
+  "dialog_mentor_visual_5": "06_导师/导师_情报剧情六格_v1__01_透露情报.png",
+  "dialog_mentor_visual_6": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_visual_7": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_visual_8": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_visual_9": "06_导师/导师_情报剧情六格_v1__04_从容保证.png",
+  "dialog_mentor_visual_10": "06_导师/导师_情报剧情六格_v1__04_从容保证.png",
+  "dialog_mentor_visual_11": "06_导师/导师_情报剧情六格_v1__04_从容保证.png",
+  "dialog_mentor_display_case_1": "06_导师/导师_日常指导六格_v1__01_神秘日常.png",
+  "dialog_mentor_display_case_2": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_display_case_3": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_display_case_4": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_display_case_reminder_6": "06_导师/导师_日常指导六格_v1__06_无奈提醒.png",
+  "dialog_mentor_display_case_reminder_7": "06_导师/导师_日常指导六格_v1__06_无奈提醒.png",
+  "dialog_mentor_display_case_reminder_1": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_display_case_reminder_2": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_display_case_reminder_3": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_display_case_reminder_4": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_display_case_reminder_5": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_sec_1": "06_导师/导师_日常指导六格_v1__04_递出便签.png",
+  "dialog_mentor_sec_2": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_sec_3": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_sec_4": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_sec_5": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_sec_6": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_sec_7": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_sec_8": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_permit_1": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_permit_2": "06_导师/导师_日常指导六格_v1__06_无奈提醒.png",
+  "dialog_mentor_permit_3": "06_导师/导师_情报剧情六格_v1__01_透露情报.png",
+  "dialog_mentor_permit_4": "06_导师/导师_情报剧情六格_v1__01_透露情报.png",
+  "dialog_mentor_permit_5": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_permit_6": "06_导师/导师_情报剧情六格_v1__03_严肃告诫.png",
+  "dialog_mentor_permit_7": "06_导师/导师_日常指导六格_v1__06_无奈提醒.png",
+  "dialog_mentor_permit_8": "06_导师/导师_情报剧情六格_v1__02_心照不宣.png",
+  "dialog_mentor_permit_9": "06_导师/导师_情报剧情六格_v1__02_心照不宣.png",
+  "dialog_mentor_permit_10": "06_导师/导师_情报剧情六格_v1__06_郑重托付.png",
+  "dialog_mentor_bargain_1": "06_导师/导师_日常指导六格_v1__01_神秘日常.png",
+  "dialog_mentor_bargain_2": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_bargain_3": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_bargain_4": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_bargain_5": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_bargain_6": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_bargain_7": "06_导师/导师_日常指导六格_v1__03_耐心讲解.png",
+  "dialog_mentor_bargain_8": "06_导师/导师_日常指导六格_v1__02_温和认可.png",
+  "dialog_mentor_outro_1": "06_导师/导师_情报剧情六格_v1__06_郑重托付.png",
+  "dialog_mentor_outro_2": "06_导师/导师_情报剧情六格_v1__06_郑重托付.png",
+  "dialog_mentor_outro_3": "06_导师/导师_日常指导六格_v1__02_温和认可.png",
+  "dialog_mentor_outro_4": "06_导师/导师_日常指导六格_v1__02_温和认可.png",
+  "dialog_mentor_outro_5": "06_导师/导师_日常指导六格_v1__02_温和认可.png",
+  "dialog_mentor_outro_6": "06_导师/导师_日常指导六格_v1__02_温和认可.png",
+  "dialog_mentor_outro_7": "06_导师/导师_情报剧情六格_v1__06_郑重托付.png",
+  "dialog_serpico1_1": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__01_新人报到.png",
+  "dialog_serpico1_2": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__01_新人报到.png",
+  "dialog_serpico1_3": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__01_新人报到.png",
+  "dialog_serpico1_4": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__01_新人报到.png",
+  "dialog_serpico1_5": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__03_家人不理解.png",
+  "dialog_serpico1_6": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__01_新人报到.png",
+  "dialog_serpico1_7": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__02_零食交朋友.png",
+  "dialog_serpico1_8": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__02_零食交朋友.png",
+  "dialog_serpico3_1": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__03_家人不理解.png",
+  "dialog_serpico3_2": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__03_家人不理解.png",
+  "dialog_serpico3_3": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__04_发现腐败.png",
+  "dialog_serpico3_4": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__04_发现腐败.png",
+  "dialog_serpico3_5": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__04_发现腐败.png",
+  "dialog_serpico3_6": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__05_接到呼叫.png",
+  "dialog_serpico3_7": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__05_接到呼叫.png",
+  "dialog_serpico3_8": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__01_新人报到.png",
+  "dialog_serpico4_1": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__06_期待调查.png",
+  "dialog_serpico4_2": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__06_期待调查.png",
+  "dialog_serpico4_3": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__06_期待调查.png",
+  "dialog_serpico4_4": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__06_期待调查.png",
+  "dialog_serpico4_5": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__06_期待调查.png",
+  "dialog_serpico4_6": "07_塞尔皮科/塞尔皮科_制服阶段六格_v1__06_期待调查.png",
+  "dialog_serpico6_1": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__01_警惕现身.png",
+  "dialog_serpico6_2": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__02_急切辩解.png",
+  "dialog_serpico6_3": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__02_急切辩解.png",
+  "dialog_serpico6_4": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__01_警惕现身.png",
+  "dialog_serpico6_5": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__01_警惕现身.png",
+  "dialog_serpico6_arrest_client": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__02_急切辩解.png",
+  "dialog_serpico7_rev_1": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__03_革命军抉择.png",
+  "dialog_serpico7_rev_2": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__03_革命军抉择.png",
+  "dialog_serpico7_rev_3": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__03_革命军抉择.png",
+  "dialog_serpico7_bm_1": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__01_黑市抉择.png",
+  "dialog_serpico7_bm_2": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__01_黑市抉择.png",
+  "dialog_serpico7_bm_3": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__01_黑市抉择.png",
+  "dialog_serpico7_sec_1": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__05_信任长官.png",
+  "dialog_serpico7_sec_2": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__05_信任长官.png",
+  "dialog_serpico7_1": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__04_感谢食物.png",
+  "dialog_serpico7_2": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__05_说明证据.png",
+  "dialog_serpico7_3": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__05_说明证据.png",
+  "dialog_serpico7_4": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__06_谨慎求助.png",
+  "dialog_serpico7_5": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__06_谨慎求助.png",
+  "dialog_serpico7_ask": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__06_谨慎求助.png",
+  "dialog_serpico_end_rev_1": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__04_加入革命军.png",
+  "dialog_serpico_end_rev_2": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__04_加入革命军.png",
+  "dialog_serpico_end_rev_3": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__04_加入革命军.png",
+  "dialog_serpico_end_rev_4": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__04_加入革命军.png",
+  "dialog_serpico_end_rev_5": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__04_加入革命军.png",
+  "dialog_serpico_end_sec_1": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__06_重返制服.png",
+  "dialog_serpico_end_sec_2": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__06_重返制服.png",
+  "dialog_serpico_end_sec_3": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__06_重返制服.png",
+  "dialog_serpico_end_sec_4": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__06_重返制服.png",
+  "dialog_serpico_end_sec_5": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__06_重返制服.png",
+  "dialog_serpico_end_bm_1": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__02_黑市告别.png",
+  "dialog_serpico_end_bm_2": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__02_黑市告别.png",
+  "dialog_serpico_end_bm_3": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__02_黑市告别.png",
+  "dialog_serpico_end_bm_4": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__02_黑市告别.png",
+  "dialog_serpico_end_bm_5": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__02_黑市告别.png",
+  "dialog_serpico_end_bm_accept": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__02_黑市告别.png",
+  "dialog_serpico_end_bm_done": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__02_黑市告别.png",
+  "dialog_wild_network_1": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_wild_network_2": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_wild_network_3": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_wild_network_4": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_wild_network_5": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_wild_network_6": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_wild_network_7": "08_王尔德/王尔德_社区与生意六格_v1__02_递出名片.png",
+  "dialog_wild_network_8": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_upgrade_reminder_1": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_upgrade_reminder_2": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_upgrade_reminder_3": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_upgrade_reminder_4": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_network_reminder_1": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_network_reminder_2": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_network_reminder_3": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_wild_network_reminder_4": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_wild_network_reminder_5": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_bailout_1": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_wild_bailout_2": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_wild_bailout_3": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_wild_bailout_4": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_wild_deed_1": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_deed_2": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_deed_3": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_deed_4": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png",
+  "dialog_wild_deed_5": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png",
+  "dialog_wild_deed_6": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png",
+  "dialog_wild_deed_7": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png",
+  "dialog_wild_deed_8": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png",
+  "dialog_wild_deed_9": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_wild_cheng_1": "08_王尔德/王尔德_社区与生意六格_v1__06_程大爷纪念物.png",
+  "dialog_wild_cheng_2": "08_王尔德/王尔德_社区与生意六格_v1__06_程大爷纪念物.png",
+  "dialog_wild_cheng_3": "08_王尔德/王尔德_社区与生意六格_v1__06_程大爷纪念物.png",
+  "dialog_wild_cheng_4": "08_王尔德/王尔德_社区与生意六格_v1__06_程大爷纪念物.png",
+  "dialog_wild_cheng_5": "08_王尔德/王尔德_社区与生意六格_v1__06_程大爷纪念物.png",
+  "dialog_wild_cheng_6": "08_王尔德/王尔德_社区与生意六格_v1__06_程大爷纪念物.png",
+  "dialog_wanted5_1": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_wanted5_2": "09_卢/base__wanted5.png",
+  "dialog_wanted5_3": "09_卢/base__wanted5.png",
+  "dialog_wanted5_4": "09_卢/base__wanted5.png",
+  "dialog_wanted5_tools_1": "09_卢/卢_普通装剧情六格_v1__02_谈论客人.png",
+  "dialog_wanted5_tools_2": "09_卢/卢_普通装剧情六格_v1__02_谈论客人.png",
+  "dialog_wanted5_5": "09_卢/base__wanted5.png",
+  "dialog_wanted5_6": "09_卢/base__wanted5.png",
+  "dialog_wanted5_7": "09_卢/base__wanted5.png",
+  "dialog_wanted5_8": "09_卢/base__wanted5.png",
+  "dialog_wanted5_arrest_client_1": "09_卢/卢_普通装剧情六格_v1__03_从容被捕.png",
+  "dialog_wanted5_arrest_client_2": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_wanted5_arrest_client_3": "09_卢/卢_普通装剧情六格_v1__03_从容被捕.png",
+  "dialog_wanted5morning_1": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_2": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_3": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_4": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_5": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_6": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_7": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_8": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_9": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_10": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_11": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_wanted5morning_12": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_lou_bomb_1": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_bomb_2": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_bomb_3": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_bomb_4": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_box_drop_1": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_drop_2": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_drop_3": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_drop_4": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_drop_5": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_box_drop_6": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_collect_1": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_lou_box_collect_2": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_lou_box_taken_1": "09_卢/卢_普通装剧情六格_v1__06_发现物品被动.png",
+  "dialog_lou_box_taken_2": "09_卢/卢_普通装剧情六格_v1__06_发现物品被动.png",
+  "dialog_lou_box_taken_3": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_box_taken_4": "09_卢/卢_普通装剧情六格_v1__06_发现物品被动.png",
+  "dialog_lou_box_peeked_1": "09_卢/卢_普通装剧情六格_v1__06_发现物品被动.png",
+  "dialog_lou_box_peeked_2": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_peeked_3": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_peeked_4": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_untouched_1": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_untouched_2": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_box_see_you": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_lou_disguise_1": "09_卢/卢_执法者伪装剧情六格_v1__01_展示制服.png",
+  "dialog_lou_disguise_2": "09_卢/卢_执法者伪装剧情六格_v1__01_展示制服.png",
+  "dialog_lou_disguise_3": "09_卢/卢_执法者伪装剧情六格_v1__01_展示制服.png",
+  "dialog_lou_disguise_4": "09_卢/卢_执法者伪装剧情六格_v1__02_戏弄玩家.png",
+  "dialog_lou_disguise_5": "09_卢/base__lou_sec.png",
+  "dialog_lou_disguise_6": "09_卢/base__lou_sec.png",
+  "dialog_lou_disguise_7": "09_卢/卢_执法者伪装剧情六格_v1__04_索要人情.png",
+  "dialog_lou_disguise_8": "09_卢/卢_执法者伪装剧情六格_v1__04_索要人情.png",
+  "dialog_lou_disguise_9": "09_卢/卢_执法者伪装剧情六格_v1__04_索要人情.png",
+  "dialog_lou_disguise_10": "09_卢/卢_执法者伪装剧情六格_v1__05_检查物资.png",
+  "dialog_lou_disguise_accept_1": "09_卢/卢_执法者伪装剧情六格_v1__02_戏弄玩家.png",
+  "dialog_lou_disguise_accept_2": "09_卢/卢_执法者伪装剧情六格_v1__02_戏弄玩家.png",
+  "dialog_lou_disguise_dismiss_1": "09_卢/卢_执法者伪装剧情六格_v1__03_伪装被识破.png",
+  "dialog_lou_disguise_dismiss_2": "09_卢/卢_执法者伪装剧情六格_v1__03_伪装被识破.png",
+  "dialog_lou_demand_even": "09_卢/卢_普通装剧情六格_v1__04_再次现身.png",
+  "dialog_lou_demand_cash": "09_卢/卢_普通装剧情六格_v1__02_谈论客人.png",
+  "dialog_lou_demand_cash_all": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_demand_bomb_1": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_demand_bomb_2": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_demand_bomb_3": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_demand_bomb_4": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_demand_short": "09_卢/卢_普通装剧情六格_v1__02_谈论客人.png",
+  "dialog_lou_demand_wait": "09_卢/卢_普通装剧情六格_v1__02_谈论客人.png",
+  "dialog_lou_demand_1": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_demand_2": "09_卢/卢_普通装剧情六格_v1__02_谈论客人.png",
+  "dialog_lou_demand_3": "09_卢/卢_普通装剧情六格_v1__05_午夜提醒.png",
+  "dialog_lou_demand_enough": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_demand_progress": "09_卢/卢_普通装剧情六格_v1__01_亲昵招呼.png",
+  "dialog_lou_demand_remaining": "09_卢/卢_普通装剧情六格_v1__02_谈论客人.png",
+  "dialog_wanted4_1": "10_奥丁/奥丁_秘密采购六格_v1__01_别按报警器.png",
+  "dialog_wanted4_2": "10_奥丁/奥丁_秘密采购六格_v1__02_正式介绍.png",
+  "dialog_wanted4_3": "10_奥丁/奥丁_秘密采购六格_v1__02_正式介绍.png",
+  "dialog_wanted4_4": "10_奥丁/奥丁_秘密采购六格_v1__02_正式介绍.png",
+  "dialog_wanted4_5": "10_奥丁/奥丁_秘密采购六格_v1__03_采购需求.png",
+  "dialog_wanted4_6": "10_奥丁/奥丁_秘密采购六格_v1__03_采购需求.png",
+  "dialog_wanted4_7": "10_奥丁/奥丁_秘密采购六格_v1__04_商谈价格.png",
+  "dialog_wanted4_8": "10_奥丁/奥丁_秘密采购六格_v1__05_递联系卡.png",
+  "dialog_wanted4_arrest_client": "10_奥丁/奥丁_秘密采购六格_v1__06_遭到背叛.png",
+  "dialog_wanted4normal_1": "10_奥丁/base__wanted4.png",
+  "dialog_wanted4normal_2": "10_奥丁/奥丁_秘密采购六格_v1__03_采购需求.png",
+  "dialog_wanted4normal_3": "10_奥丁/奥丁_秘密采购六格_v1__03_采购需求.png",
+  "dialog_wanted4normal_arrest_client": "10_奥丁/奥丁_秘密采购六格_v1__06_遭到背叛.png",
+  "dialog_wanted2_1": "11_屠夫/base__wanted2.png",
+  "dialog_wanted2_2": "11_屠夫/屠夫_红瞳交易与威胁六格_v1__02_介绍好物.png",
+  "dialog_wanted2_3": "11_屠夫/屠夫_红瞳交易与威胁六格_v1__03_整批打折.png",
+  "dialog_wanted2_warning_1": "11_屠夫/屠夫_红瞳交易与威胁六格_v1__05_红瞳警告.png",
+  "dialog_wanted2_warning_2": "11_屠夫/屠夫_红瞳交易与威胁六格_v1__05_红瞳警告.png",
+  "dialog_wanted2_warning_3": "11_屠夫/屠夫_红瞳交易与威胁六格_v1__05_红瞳警告.png",
+  "dialog_wanted2_arrest_client": "11_屠夫/屠夫_红瞳交易与威胁六格_v1__06_红瞳威胁.png",
+  "dialog_wanted2_return_1": "11_屠夫/屠夫_红瞳交易与威胁六格_v1__04_新鲜包裹.png",
+  "dialog_wanted6_1": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_2": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_3": "12_李北文/李北文_研究与求助六格_v1__02_讲解研究.png",
+  "dialog_wanted6_4": "12_李北文/李北文_研究与求助六格_v1__02_讲解研究.png",
+  "dialog_wanted6_5": "12_李北文/李北文_研究与求助六格_v1__03_诉说陷害.png",
+  "dialog_wanted6_6": "12_李北文/李北文_研究与求助六格_v1__03_诉说陷害.png",
+  "dialog_wanted6_7": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_8": "12_李北文/李北文_研究与求助六格_v1__02_讲解研究.png",
+  "dialog_wanted6_arrest_client": "12_李北文/李北文_研究与求助六格_v1__05_护住研究.png",
+  "dialog_wanted6_plea_1": "12_李北文/李北文_研究与求助六格_v1__05_护住研究.png",
+  "dialog_wanted6_plea_2": "12_李北文/李北文_研究与求助六格_v1__05_护住研究.png",
+  "dialog_wanted6_thanks": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_supply_leave": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_supply_1": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_supply_3": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_supply_4": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_supply_2": "12_李北文/李北文_研究与求助六格_v1__04_请求材料.png",
+  "dialog_wanted6_supply_5": "12_李北文/李北文_研究与求助六格_v1__04_请求材料.png",
+  "dialog_wanted6_supply_6": "12_李北文/李北文_研究与求助六格_v1__04_请求材料.png",
+  "dialog_wanted6_supply_none": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_supply_enough": "12_李北文/李北文_研究与求助六格_v1__01_谨慎介绍.png",
+  "dialog_wanted6_finale_1": "12_李北文/李北文_研究与求助六格_v1__06_分享配方.png",
+  "dialog_wanted6_finale_2": "12_李北文/李北文_研究与求助六格_v1__06_分享配方.png",
+  "dialog_wanted6_finale_3": "12_李北文/李北文_研究与求助六格_v1__06_分享配方.png",
+  "dialog_wanted6_finale_4": "12_李北文/李北文_研究与求助六格_v1__06_分享配方.png",
+  "dialog_wanted7_plea_1": "13_胡安/胡安_灰色生意四格_v1__03_求别举报.png",
+  "dialog_wanted7_plea_2": "13_胡安/胡安_灰色生意四格_v1__03_求别举报.png",
+  "dialog_wanted7_plea_thanks": "13_胡安/胡安_灰色生意四格_v1__04_熟客交易.png",
+  "dialog_wanted7_2": "13_胡安/胡安_灰色生意四格_v1__02_长期生意.png",
+  "dialog_wanted7_return_2": "13_胡安/胡安_灰色生意四格_v1__04_熟客交易.png",
+  "dialog_wanted7_1": "13_胡安/胡安_灰色生意四格_v1__01_试探卖货.png",
+  "dialog_wanted9_arrest_client": "14_勒鲁瓦/勒鲁瓦_冒牌与露馅双格_v1__02_露馅泄气.png",
+  "dialog_wanted1_1": "15_詹姆斯贝利_未做剧情精灵图/review__冷静卖货.png",
+  "dialog_wanted1_2": "15_詹姆斯贝利_未做剧情精灵图/review__冷静卖货.png",
+  "dialog_wanted1_3": "15_詹姆斯贝利_未做剧情精灵图/review__整批议价.png",
+  "dialog_wanted1_plea_1": "15_詹姆斯贝利_未做剧情精灵图/review__供货求情.png",
+  "dialog_wanted1_plea_2": "15_詹姆斯贝利_未做剧情精灵图/review__供货求情.png",
+  "dialog_wanted1_plea_3": "15_詹姆斯贝利_未做剧情精灵图/review__供货求情.png",
+  "dialog_wanted1_arrest_client": "15_詹姆斯贝利_未做剧情精灵图/review__被捕恼火.png",
+  "dialog_wanted1_return_1": "15_詹姆斯贝利_未做剧情精灵图/review__冷静卖货.png",
+  "dialog_wanted1_return_2": "15_詹姆斯贝利_未做剧情精灵图/review__冷静卖货.png",
+  "dialog_wanted1_return_3": "15_詹姆斯贝利_未做剧情精灵图/review__冷静卖货.png",
+  "dialog_wanted3_1": "16_亚瑟拉弗勒_未做剧情精灵图/review__谨慎采购.png",
+  "dialog_wanted3_2": "16_亚瑟拉弗勒_未做剧情精灵图/review__谨慎采购.png",
+  "dialog_wanted3_plea_1": "16_亚瑟拉弗勒_未做剧情精灵图/review__慌张辩解.png",
+  "dialog_wanted3_plea_2": "16_亚瑟拉弗勒_未做剧情精灵图/review__人脉求情.png",
+  "dialog_wanted3_plea_3": "16_亚瑟拉弗勒_未做剧情精灵图/review__人脉求情.png",
+  "dialog_wanted3_thanks": "16_亚瑟拉弗勒_未做剧情精灵图/review__释然感谢.png",
+  "dialog_wanted8_1": "17_约翰史密斯_未做剧情精灵图/review__解释无辜.png",
+  "dialog_wanted8_2": "17_约翰史密斯_未做剧情精灵图/review__解释无辜.png",
+  "dialog_wanted8_3": "17_约翰史密斯_未做剧情精灵图/review__解释无辜.png",
+  "dialog_wanted8_4": "17_约翰史密斯_未做剧情精灵图/review__解释无辜.png",
+  "dialog_wanted8_5": "17_约翰史密斯_未做剧情精灵图/review__解释无辜.png",
+  "dialog_wanted8_6": "17_约翰史密斯_未做剧情精灵图/review__反复误抓.png",
+  "dialog_wanted8_arrest_client": "17_约翰史密斯_未做剧情精灵图/review__解释无辜.png",
+  "dialog_wanted8_return_1": "17_约翰史密斯_未做剧情精灵图/review__愤怒质问.png",
+  "dialog_wanted8_return_2": "17_约翰史密斯_未做剧情精灵图/review__愤怒质问.png",
+  "dialog_wanted8_return_3": "17_约翰史密斯_未做剧情精灵图/review__愤怒质问.png",
+  "dialog_wanted8_return_4": "17_约翰史密斯_未做剧情精灵图/review__反复误抓.png",
+  "dialog_wanted8_return_5": "17_约翰史密斯_未做剧情精灵图/review__反复误抓.png",
+  "dialog_wanted8_return_arrest_client": "17_约翰史密斯_未做剧情精灵图/review__愤怒质问.png",
+  "dialog_wanted8_vandal_1": "17_约翰史密斯_未做剧情精灵图/review__报复得意.png",
+  "dialog_wanted8_vandal_2": "17_约翰史密斯_未做剧情精灵图/review__报复得意.png",
+  "dialog_wanted8_vandal_3": "17_约翰史密斯_未做剧情精灵图/review__报复得意.png",
+  "dialog_wanted8_vandal_arrest_client": "17_约翰史密斯_未做剧情精灵图/review__反复误抓.png",
+  "dialog_marketplace_intro_1": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_marketplace_intro_2": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_marketplace_intro_3": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_marketplace_intro_4": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_marketplace_intro_5": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_marketplace_intro_6": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_marketplace_intro_7": "08_王尔德/王尔德_社区与生意六格_v1__02_递出名片.png",
+  "dialog_marketplace_intro_8": "08_王尔德/王尔德_社区与生意六格_v1__02_递出名片.png",
+  "dialog_network_intro_1": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_network_intro_2": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_network_intro_3": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_network_intro_4": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_network_intro_5": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png",
+  "dialog_network_intro_6": "08_王尔德/王尔德_社区与生意六格_v1__02_递出名片.png",
+  "dialog_network_intro_7": "08_王尔德/王尔德_社区与生意六格_v1__02_递出名片.png",
+  "dialog_network_intro_8": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_insurance_1": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png",
+  "dialog_insurance_2": "08_王尔德/王尔德_社区与生意六格_v1__02_递出名片.png",
+  "dialog_insurance_3": "08_王尔德/王尔德_社区与生意六格_v1__02_递出名片.png",
+  "dialog_insurance_4": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_insurance_5": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_insurance_6": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_insurance_7": "08_王尔德/王尔德_社区与生意六格_v1__04_免费帮忙.png",
+  "dialog_insurance_8": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png",
+  "dialog_insurance_9": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png",
+  "dialog_insurance_10": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png",
+  "dialog_insurance_11": "08_王尔德/王尔德_社区与生意六格_v1__02_递出名片.png"
+ },
+ "events": {
+  "officerLunVisit": {
+   "enters": {
+    "默认入场": "01_伦警官/base__lun.png"
+   },
+   "exits": {
+    "自然退场": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「递错物品」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+    "走完「递对物品」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「成交」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png"
+   }
+  },
+  "officerLunShot": {
+   "enters": {
+    "默认入场": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png"
+   },
+   "exits": {
+    "自然退场": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「成交」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「递错物品」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「递违禁品」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「递对物品」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png"
+   }
+  },
+  "officerLunBackOnDuty": {
+   "enters": {
+    "默认入场": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png"
+   },
+   "exits": {
+    "自然退场": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「成交」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「谢过黑药」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「递错物品」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__02_强装轻松.png",
+    "走完「否认上瘾」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__03_否认上瘾.png",
+    "走完「递违禁品」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png",
+    "走完「递对物品」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__01_受伤求药.png"
+   }
+  },
+  "officerLunSurplus": {
+   "enters": {
+    "默认入场": "01_伦警官/base__lun.png"
+   },
+   "exits": {
+    "自然退场": "01_伦警官/base__lun.png"
+   }
+  },
+  "officerLunInspection": {
+   "enters": {
+    "默认入场": "01_伦警官/base__lun.png"
+   },
+   "exits": {
+    "自然退场": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__05_突击盘查.png",
+    "走完「查获麻醉品」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__06_被捕辩解.png",
+    "走完「盘查通过」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__05_突击盘查.png",
+    "走完「被捕·本人」后": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__05_突击盘查.png",
+    "被捕带走": "01_伦警官/伦警官_六格剧情精灵图_v2_拘谨表演__05_突击盘查.png"
+   }
+  },
+  "inventor": {
+   "enters": {
+    "默认入场": "02_杰克逊博士/base__jackson.png"
+   },
+   "exits": {
+    "自然退场": "02_杰克逊博士/base__jackson.png"
+   }
+  },
+  "inventorStorage": {
+   "enters": {
+    "默认入场": "02_杰克逊博士/base__jackson.png"
+   },
+   "exits": {
+    "自然退场": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png"
+   }
+  },
+  "inventorIntro": {
+   "enters": {
+    "默认入场": "02_杰克逊博士/base__jackson.png"
+   },
+   "exits": {
+    "自然退场": "02_杰克逊博士/base__jackson.png"
+   }
+  },
+  "inventorModuleIntro": {
+   "enters": {
+    "默认入场": "02_杰克逊博士/base__jackson.png"
+   },
+   "exits": {
+    "自然退场": "02_杰克逊博士/杰克逊博士_发明与交易六格_v1__01_活力招呼.png"
+   }
+  },
+  "landlord": {
+   "enters": {
+    "默认入场": "03_房东/base__landlord.png"
+   },
+   "exits": {
+    "自然退场": "03_房东/房东_收租与生意六格_v1__06_认可买下店铺.png"
+   }
+  },
+  "landlordVending": {
+   "enters": {
+    "默认入场": "03_房东/base__landlord.png"
+   },
+   "exits": {
+    "自然退场": "03_房东/base__landlord.png"
+   }
+  },
+  "landlord_wholesale": {
+   "enters": {
+    "默认入场": "03_房东/base__landlord.png"
+   },
+   "exits": {
+    "自然退场": "03_房东/base__landlord.png"
+   }
+  },
+  "georgioSerpicoLetter": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png"
+   }
+  },
+  "georgio1": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png",
+    "被捕带走": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__05_被捕慌张.png"
+   }
+  },
+  "georgio1_1": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png"
+   }
+  },
+  "georgio_backpack": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png"
+   }
+  },
+  "georgio_assistance": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png",
+    "走完「成交」后": "04_乔治奥/base__Georgio.png",
+    "走完「拒绝」后": "04_乔治奥/base__Georgio.png"
+   }
+  },
+  "georgio2": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png",
+    "被捕带走": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__05_被捕慌张.png"
+   }
+  },
+  "georgio3": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png",
+    "被捕带走": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__05_被捕慌张.png"
+   }
+  },
+  "georgio_luck_intro": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png"
+   }
+  },
+  "georgio_luck_sale": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png"
+   }
+  },
+  "georgio4": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png",
+    "被捕带走": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__06_怀疑被出卖.png"
+   }
+  },
+  "georgioLoan": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png",
+    "被捕带走": "04_乔治奥/乔治奥_朋友与麻烦六格_v1__05_被捕慌张.png"
+   }
+  },
+  "georgio_nuclear_waste": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png"
+   }
+  },
+  "georgioLoanPayback": {
+   "enters": {
+    "默认入场": "04_乔治奥/base__Georgio.png"
+   },
+   "exits": {
+    "自然退场": "04_乔治奥/base__Georgio.png"
+   }
+  },
+  "eleanorIntro": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor1.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/埃莉诺_维持体面六格_v1__01_高傲打量.png"
+   }
+  },
+  "eleanor2": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor1.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/埃莉诺_维持体面六格_v1__04_被困烦闷.png"
+   }
+  },
+  "eleanor3": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor2.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__01_崩溃诉说.png",
+    "走完「没有家人」后": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__01_崩溃诉说.png"
+   }
+  },
+  "eleanor4": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor3.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/埃莉诺_真相与选择六格_v1__01_识破陷阱.png",
+    "走完「成交」后": "05_埃莉诺/埃莉诺_真相与选择六格_v1__01_识破陷阱.png"
+   }
+  },
+  "eleanor5": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor_scav.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/base__eleanor_scav.png"
+   }
+  },
+  "eleanor6": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor_scav.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/base__eleanor_scav.png"
+   }
+  },
+  "eleanorScav": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor_scav.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/base__eleanor_scav.png"
+   }
+  },
+  "eleanor7": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor_scav.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/base__eleanor_scav.png"
+   }
+  },
+  "eleanor8": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor_scav.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/base__eleanor_scav.png"
+   }
+  },
+  "eleanor9": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor_scav.png",
+    "革命": "05_埃莉诺/base__eleanor_rev.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/base__eleanor_scav.png",
+    "革命": "05_埃莉诺/base__eleanor_rev.png"
+   }
+  },
+  "eleanor6/to": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor_scav.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__03_含泪感谢.png",
+    "走完「打包带走」后": "05_埃莉诺/埃莉诺_跌落与振作六格_v1__03_含泪感谢.png"
+   }
+  },
+  "eleanor/scav": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor_scav.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/base__eleanor_scav.png"
+   }
+  },
+  "eleanorWarned": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor2.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/base__eleanor2.png",
+    "走完「被警告·离开」后": "05_埃莉诺/base__eleanor2.png"
+   }
+  },
+  "eleanor/arrest": {
+   "enters": {
+    "默认入场": "05_埃莉诺/base__eleanor_scav.png"
+   },
+   "exits": {
+    "自然退场": "05_埃莉诺/埃莉诺_真相与选择六格_v2_修正服装__01_识破陷阱.png",
+    "被捕带走": "05_埃莉诺/埃莉诺_真相与选择六格_v2_修正服装__01_识破陷阱.png"
+   }
+  },
+  "mentor/afterhours": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/base__Mentor.png"
+   }
+  },
+  "mentor/intro": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/base__Mentor.png"
+   }
+  },
+  "mentor/shotgun": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/导师_情报剧情六格_v1__01_透露情报.png"
+   }
+  },
+  "mentor_visual_inspection": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/导师_情报剧情六格_v1__01_透露情报.png"
+   }
+  },
+  "mentor_display_case": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/导师_情报剧情六格_v1__01_透露情报.png",
+    "走完「展柜提醒」后": "06_导师/导师_日常指导六格_v1__06_无奈提醒.png"
+   }
+  },
+  "mentor_display_case_reminder": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/base__Mentor.png"
+   }
+  },
+  "mentor_sec_record": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/base__Mentor.png"
+   }
+  },
+  "mentor_permit": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/base__Mentor.png"
+   }
+  },
+  "mentor_bargain": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/base__Mentor.png"
+   }
+  },
+  "mentor_outro": {
+   "enters": {
+    "默认入场": "06_导师/base__Mentor.png"
+   },
+   "exits": {
+    "自然退场": "06_导师/base__Mentor.png"
+   }
+  },
+  "serpico1": {
+   "enters": {
+    "默认入场": "07_塞尔皮科/base__Serpico.png"
+   },
+   "exits": {
+    "自然退场": "07_塞尔皮科/base__Serpico.png"
+   }
+  },
+  "serpico3": {
+   "enters": {
+    "默认入场": "07_塞尔皮科/base__Serpico.png"
+   },
+   "exits": {
+    "自然退场": "07_塞尔皮科/base__Serpico.png"
+   }
+  },
+  "serpico4": {
+   "enters": {
+    "默认入场": "07_塞尔皮科/base__Serpico.png"
+   },
+   "exits": {
+    "自然退场": "07_塞尔皮科/base__Serpico.png"
+   }
+  },
+  "serpico6": {
+   "enters": {
+    "默认入场": "07_塞尔皮科/base__serpico_scav.png"
+   },
+   "exits": {
+    "自然退场": "07_塞尔皮科/base__serpico_scav.png",
+    "被捕带走": "07_塞尔皮科/塞尔皮科_逃亡与证据六格_v1__05_说明证据.png"
+   }
+  },
+  "serpico7": {
+   "enters": {
+    "默认入场": "07_塞尔皮科/base__serpico_scav.png"
+   },
+   "exits": {
+    "自然退场": "07_塞尔皮科/base__serpico_scav.png"
+   }
+  },
+  "serpicoConclusion": {
+   "enters": {
+    "默认入场": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__06_重返制服.png",
+    "革命军": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__04_加入革命军.png"
+   },
+   "exits": {
+    "自然退场": "07_塞尔皮科/base__Serpico.png"
+   }
+  },
+  "wild/network": {
+   "enters": {
+    "默认入场": "08_王尔德/base__wild.png"
+   },
+   "exits": {
+    "自然退场": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png"
+   }
+  },
+  "wild_upgrade_reminder": {
+   "enters": {
+    "默认入场": "08_王尔德/base__wild.png"
+   },
+   "exits": {
+    "自然退场": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png"
+   }
+  },
+  "wild_network_reminder": {
+   "enters": {
+    "默认入场": "08_王尔德/base__wild.png"
+   },
+   "exits": {
+    "自然退场": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png"
+   }
+  },
+  "wild_bailout": {
+   "enters": {
+    "默认入场": "08_王尔德/base__wild.png"
+   },
+   "exits": {
+    "自然退场": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png"
+   }
+  },
+  "wild_deed_visit": {
+   "enters": {
+    "默认入场": "08_王尔德/base__wild.png"
+   },
+   "exits": {
+    "自然退场": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png"
+   }
+  },
+  "wild_grandpa_cheng": {
+   "enters": {
+    "默认入场": "08_王尔德/base__wild.png"
+   },
+   "exits": {
+    "自然退场": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png"
+   }
+  },
+  "wanted5": {
+   "enters": {
+    "默认入场": "09_卢/base__wanted5.png"
+   },
+   "exits": {
+    "自然退场": "09_卢/base__wanted5.png",
+    "被捕带走": "09_卢/卢_普通装剧情六格_v1__03_从容被捕.png"
+   }
+  },
+  "wanted5morning": {
+   "enters": {
+    "默认入场": "09_卢/base__wanted5.png"
+   },
+   "exits": {
+    "自然退场": "09_卢/base__wanted5.png"
+   }
+  },
+  "louBombVisit": {
+   "enters": {
+    "默认入场": "09_卢/base__wanted5.png"
+   },
+   "exits": {
+    "自然退场": "09_卢/base__wanted5.png"
+   }
+  },
+  "louBoxDrop": {
+   "enters": {
+    "默认入场": "09_卢/base__wanted5.png"
+   },
+   "exits": {
+    "自然退场": "09_卢/base__wanted5.png"
+   }
+  },
+  "louBoxCollect": {
+   "enters": {
+    "默认入场": "09_卢/base__wanted5.png"
+   },
+   "exits": {
+    "自然退场": "09_卢/base__wanted5.png"
+   }
+  },
+  "lou/box": {
+   "enters": {
+    "默认入场": "09_卢/base__wanted5.png"
+   },
+   "exits": {
+    "自然退场": "09_卢/base__wanted5.png",
+    "走完「箱子·偷看」后": "09_卢/base__wanted5.png",
+    "走完「箱子·没动」后": "09_卢/base__wanted5.png",
+    "走完「箱子·被发现」后": "09_卢/base__wanted5.png"
+   }
+  },
+  "louDisguise": {
+   "enters": {
+    "默认入场": "09_卢/base__lou_sec.png"
+   },
+   "exits": {
+    "自然退场": "09_卢/base__lou_sec.png"
+   }
+  },
+  "louDemandCollect": {
+   "enters": {
+    "默认入场": "09_卢/base__wanted5.png"
+   },
+   "exits": {
+    "自然退场": "09_卢/base__wanted5.png",
+    "走完「凑够货款」后": "09_卢/base__wanted5.png",
+    "走完「现金」后": "09_卢/base__wanted5.png",
+    "走完「全部现金」后": "09_卢/base__wanted5.png",
+    "走完「钱不够」后": "09_卢/base__wanted5.png",
+    "走完「等一下」后": "09_卢/base__wanted5.png",
+    "走完「索款」后": "09_卢/base__wanted5.png",
+    "走完「够了」后": "09_卢/base__wanted5.png",
+    "走完「进度」后": "09_卢/base__wanted5.png"
+   }
+  },
+  "lou/demand": {
+   "enters": {
+    "默认入场": "09_卢/base__wanted5.png"
+   },
+   "exits": {
+    "自然退场": "09_卢/base__wanted5.png"
+   }
+  },
+  "wanted4": {
+   "enters": {
+    "默认入场": "10_奥丁/base__wanted4.png"
+   },
+   "exits": {
+    "自然退场": "10_奥丁/base__wanted4.png",
+    "被捕带走": "10_奥丁/奥丁_秘密采购六格_v1__06_遭到背叛.png"
+   }
+  },
+  "wanted4Normal": {
+   "enters": {
+    "默认入场": "10_奥丁/base__wanted4.png"
+   },
+   "exits": {
+    "自然退场": "10_奥丁/base__wanted4.png",
+    "被捕带走": "10_奥丁/奥丁_秘密采购六格_v1__06_遭到背叛.png"
+   }
+  },
+  "wanted2": {
+   "enters": {
+    "默认入场": "11_屠夫/base__wanted2.png"
+   },
+   "exits": {
+    "自然退场": "11_屠夫/base__wanted2.png",
+    "被捕带走": "11_屠夫/屠夫_红瞳交易与威胁六格_v1__06_红瞳威胁.png"
+   }
+  },
+  "wanted2_return": {
+   "enters": {
+    "默认入场": "11_屠夫/base__wanted2.png"
+   },
+   "exits": {
+    "自然退场": "11_屠夫/base__wanted2.png"
+   }
+  },
+  "wanted6": {
+   "enters": {
+    "默认入场": "12_李北文/base__wanted6.png"
+   },
+   "exits": {
+    "自然退场": "12_李北文/base__wanted6.png",
+    "被捕带走": "12_李北文/李北文_研究与求助六格_v1__05_护住研究.png"
+   }
+  },
+  "wanted6_supply": {
+   "enters": {
+    "默认入场": "12_李北文/base__wanted6.png"
+   },
+   "exits": {
+    "自然退场": "12_李北文/base__wanted6.png",
+    "走完「供货·离开」后": "12_李北文/base__wanted6.png",
+    "走完「供货·没有」后": "12_李北文/base__wanted6.png",
+    "走完「供货·足够」后": "12_李北文/base__wanted6.png"
+   }
+  },
+  "wanted6_finale": {
+   "enters": {
+    "默认入场": "12_李北文/base__wanted6.png"
+   },
+   "exits": {
+    "自然退场": "12_李北文/base__wanted6.png"
+   }
+  },
+  "wanted7": {
+   "enters": {
+    "默认入场": "13_胡安/base__wanted7.png"
+   },
+   "exits": {
+    "自然退场": "13_胡安/base__wanted7.png"
+   }
+  },
+  "wanted9": {
+   "enters": {
+    "默认入场": "14_勒鲁瓦/勒鲁瓦_冒牌与露馅双格_v1__01_冒牌耍威风.png"
+   },
+   "exits": {
+    "自然退场": "14_勒鲁瓦/base__wanted9.png",
+    "被捕带走": "14_勒鲁瓦/勒鲁瓦_冒牌与露馅双格_v1__02_露馅泄气.png"
+   }
+  },
+  "wanted1": {
+   "enters": {
+    "默认入场": "15_詹姆斯贝利_未做剧情精灵图/base__wanted1.png"
+   },
+   "exits": {
+    "自然退场": "15_詹姆斯贝利_未做剧情精灵图/base__wanted1.png",
+    "被捕带走": "15_詹姆斯贝利_未做剧情精灵图/base__wanted1.png"
+   }
+  },
+  "wanted1_return": {
+   "enters": {
+    "默认入场": "15_詹姆斯贝利_未做剧情精灵图/base__wanted1.png"
+   },
+   "exits": {
+    "自然退场": "15_詹姆斯贝利_未做剧情精灵图/base__wanted1.png"
+   }
+  },
+  "wanted3": {
+   "enters": {
+    "默认入场": "16_亚瑟拉弗勒_未做剧情精灵图/base__wanted3.png"
+   },
+   "exits": {
+    "自然退场": "16_亚瑟拉弗勒_未做剧情精灵图/base__wanted3.png"
+   }
+  },
+  "wanted8": {
+   "enters": {
+    "默认入场": "17_约翰史密斯_未做剧情精灵图/base__wanted8.png"
+   },
+   "exits": {
+    "自然退场": "17_约翰史密斯_未做剧情精灵图/base__wanted8.png",
+    "被捕带走": "17_约翰史密斯_未做剧情精灵图/base__wanted8.png"
+   }
+  },
+  "wanted8_return": {
+   "enters": {
+    "默认入场": "17_约翰史密斯_未做剧情精灵图/base__wanted8.png"
+   },
+   "exits": {
+    "自然退场": "17_约翰史密斯_未做剧情精灵图/base__wanted8.png",
+    "被捕带走": "17_约翰史密斯_未做剧情精灵图/base__wanted8.png"
+   }
+  },
+  "wanted8_vandal": {
+   "enters": {
+    "默认入场": "17_约翰史密斯_未做剧情精灵图/base__wanted8.png"
+   },
+   "exits": {
+    "自然退场": "17_约翰史密斯_未做剧情精灵图/base__wanted8.png",
+    "被捕带走": "17_约翰史密斯_未做剧情精灵图/base__wanted8.png"
+   }
+  },
+  "wildMarketplaceIntro": {
+   "enters": {
+    "默认入场": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png"
+   },
+   "exits": {
+    "自然退场": "08_王尔德/王尔德_社区与生意六格_v1__01_社区规矩.png"
+   }
+  },
+  "wild2": {
+   "enters": {
+    "默认入场": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png"
+   },
+   "exits": {
+    "自然退场": "08_王尔德/王尔德_社区与生意六格_v1__03_熟络提醒.png"
+   }
+  },
+  "insuranceIntroduction": {
+   "enters": {
+    "默认入场": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png"
+   },
+   "exits": {
+    "自然退场": "08_王尔德/王尔德_社区与生意六格_v1__05_昂贵货源.png"
+   }
+  }
+ },
+ "charOf": {
+  "dialog_lun_visit_1": "lun",
+  "dialog_lun_visit_2": "lun",
+  "dialog_lun_visit_3": "lun",
+  "dialog_lun_visit_wrong_item": "lun",
+  "dialog_lun_visit_right_item": "lun",
+  "dialog_lun_visit_accept": "lun",
+  "dialog_lun_shot_1": "lun",
+  "dialog_lun_shot_2": "lun",
+  "dialog_lun_shot_3": "lun",
+  "dialog_lun_shot_4": "lun",
+  "dialog_lun_shot_accept": "lun",
+  "dialog_lun_shot_wrong_item": "lun",
+  "dialog_lun_shot_contraband": "lun",
+  "dialog_lun_shot_right_item": "lun",
+  "dialog_lun_duty_1": "lun",
+  "dialog_lun_duty_2": "lun",
+  "dialog_lun_duty_3": "lun",
+  "dialog_lun_duty_4": "lun",
+  "dialog_lun_duty_5": "lun",
+  "dialog_lun_duty_6": "lun",
+  "dialog_lun_duty_accept": "lun",
+  "dialog_lun_duty_black_injector_thanks": "lun",
+  "dialog_lun_duty_wrong_item": "lun",
+  "dialog_lun_duty_blackinjector_no": "lun",
+  "dialog_lun_duty_blackinjector_no2": "lun",
+  "dialog_lun_duty_contraband": "lun",
+  "dialog_lun_duty_right_item": "lun",
+  "dialog_lun_surplus_1": "lun",
+  "dialog_lun_surplus_2": "lun",
+  "dialog_lun_surplus_3": "lun",
+  "dialog_lun_surplus_4": "lun",
+  "dialog_lun_surplus_5": "lun",
+  "dialog_lun_surplus_accept": "lun",
+  "dialog_lun_surplus_arrest_client_1": "lun",
+  "dialog_lun_surplus_arrest_client_2": "lun",
+  "dialog_lun_inspect_1": "lun",
+  "dialog_lun_inspect_2": "lun",
+  "dialog_lun_inspect_drugs_1": "lun",
+  "dialog_lun_inspect_drugs_2": "lun",
+  "dialog_lun_inspect_clear": "lun",
+  "dialog_lun_inspect_arrest_client_1": "lun",
+  "dialog_lun_inspect_arrest_client_2": "lun",
+  "dialog_inventor_greet_1": "jackson",
+  "dialog_inventor_greet_2": "jackson",
+  "dialog_inventor_greet_3": "jackson",
+  "dialog_inventor_greet_4": "jackson",
+  "dialog_inventor_greet_5": "jackson",
+  "dialog_inventor_offer_1": "jackson",
+  "dialog_inventor_offer_2": "jackson",
+  "dialog_inventor_offer_3": "jackson",
+  "dialog_inventor_offer_4": "jackson",
+  "dialog_inventor_offer_5": "jackson",
+  "dialog_inventor_back": "jackson",
+  "dialog_inventor_storage_1": "jackson",
+  "dialog_inventor_storage_2": "jackson",
+  "dialog_inventor_storage_3": "jackson",
+  "dialog_inventor_storage_4": "jackson",
+  "dialog_inventor_intro_1": "jackson",
+  "dialog_inventor_intro_2": "jackson",
+  "dialog_inventor_intro_3": "jackson",
+  "dialog_inventor_intro_4": "jackson",
+  "dialog_inventor_intro_5": "jackson",
+  "dialog_inventor_intro_6": "jackson",
+  "dialog_inventor_intro_7": "jackson",
+  "dialog_inventor_intro_8": "jackson",
+  "dialog_inventor_intro_9": "jackson",
+  "dialog_inventor_intro_10": "jackson",
+  "dialog_inventor_intro_11": "jackson",
+  "dialog_inventor_accept_1": "jackson",
+  "dialog_inventor_accept_2": "jackson",
+  "dialog_inventor_accept_3": "jackson",
+  "dialog_inventor_accept_4": "jackson",
+  "dialog_inventor_accept_5": "jackson",
+  "dialog_inventor_accept_6": "jackson",
+  "dialog_inventor_module_1": "jackson",
+  "dialog_inventor_module_2": "jackson",
+  "dialog_inventor_module_3": "jackson",
+  "dialog_inventor_module_4": "jackson",
+  "dialog_inventor_module_accept_1": "jackson",
+  "dialog_inventor_module_accept_2": "jackson",
+  "dialog_inventor_module_accept_3": "jackson",
+  "dialog_inventor_module_accept_4": "jackson",
+  "dialog_landlord_rent_paid_1": "landlord",
+  "dialog_landlord_rent_paid_2": "landlord",
+  "dialog_landlord_no_grace_1": "landlord",
+  "dialog_landlord_no_grace_2": "landlord",
+  "dialog_landlord_grace_1": "landlord",
+  "dialog_landlord_grace_2": "landlord",
+  "dialog_landlord_grace_3": "landlord",
+  "dialog_landlord_grace_4": "landlord",
+  "dialog_landlord_grace_5": "landlord",
+  "dialog_landlord_buyout_1": "landlord",
+  "dialog_landlord_buyout_2": "landlord",
+  "dialog_landlord_buyout_3": "landlord",
+  "dialog_landlord_buyout_4": "landlord",
+  "dialog_landlord_vending_1": "landlord",
+  "dialog_landlord_vending_2": "landlord",
+  "dialog_landlord_vending_3": "landlord",
+  "dialog_landlord_vending_last": "landlord",
+  "dialog_landlord_vending_yes_1": "landlord",
+  "dialog_landlord_vending_yes_2": "landlord",
+  "dialog_landlord_vending_no_1": "landlord",
+  "dialog_landlord_vending_no_2": "landlord",
+  "dialog_landlord_ws_1": "landlord",
+  "dialog_landlord_ws_2": "landlord",
+  "dialog_landlord_ws_3": "landlord",
+  "dialog_landlord_ws_4": "landlord",
+  "dialog_georgio_serpico_letter_1": "Georgio",
+  "dialog_georgio_serpico_letter_2": "Georgio",
+  "dialog_georgio_serpico_letter_3": "Georgio",
+  "dialog_georgio_intro_1": "Georgio",
+  "dialog_georgio_intro_2": "Georgio",
+  "dialog_georgio_intro_3": "Georgio",
+  "dialog_georgio_intro_4": "Georgio",
+  "dialog_georgio_intro_5": "Georgio",
+  "dialog_georgio_intro_accept": "Georgio",
+  "dialog_georgio_intro_done": "Georgio",
+  "dialog_georgio_arrest_client_1": "Georgio",
+  "dialog_georgio_intro2_1": "Georgio",
+  "dialog_georgio_intro2_2": "Georgio",
+  "dialog_georgio_intro2_3": "Georgio",
+  "dialog_georgio_intro2_4": "Georgio",
+  "dialog_georgio_intro2_5": "Georgio",
+  "dialog_georgio_backpack_1": "Georgio",
+  "dialog_georgio_backpack_2": "Georgio",
+  "dialog_georgio_backpack_3": "Georgio",
+  "dialog_georgio_assist_5": "Georgio",
+  "dialog_georgio_assist_1": "Georgio",
+  "dialog_georgio_assist_2": "Georgio",
+  "dialog_georgio_assist_3": "Georgio",
+  "dialog_georgio_assist_4": "Georgio",
+  "dialog_georgio_assist_accept_1": "Georgio",
+  "dialog_georgio_assist_accept_2": "Georgio",
+  "dialog_georgio_assist_decline_1": "Georgio",
+  "dialog_georgio2_1": "Georgio",
+  "dialog_georgio2_2": "Georgio",
+  "dialog_georgio2_3": "Georgio",
+  "dialog_georgio2_4": "Georgio",
+  "dialog_georgio2_accept": "Georgio",
+  "dialog_georgio2_done": "Georgio",
+  "dialog_georgio2_arrest_client": "Georgio",
+  "dialog_georgio3_1": "Georgio",
+  "dialog_georgio3_2": "Georgio",
+  "dialog_georgio3_3": "Georgio",
+  "dialog_georgio3_5": "Georgio",
+  "dialog_georgio3_accept": "Georgio",
+  "dialog_georgio3_done_1": "Georgio",
+  "dialog_georgio3_done_2": "Georgio",
+  "dialog_georgio3_arrest_client": "Georgio",
+  "dialog_georgio_luck_intro_1": "Georgio",
+  "dialog_georgio_luck_intro_2": "Georgio",
+  "dialog_georgio_luck_intro_3": "Georgio",
+  "dialog_georgio_luck_sale_1": "Georgio",
+  "dialog_georgio_luck_sale_2": "Georgio",
+  "dialog_georgio4_1": "Georgio",
+  "dialog_georgio4_2": "Georgio",
+  "dialog_georgio4_3": "Georgio",
+  "dialog_georgio4_4": "Georgio",
+  "dialog_georgio4_6": "Georgio",
+  "dialog_georgio4_7": "Georgio",
+  "dialog_georgio4_8": "Georgio",
+  "dialog_georgio4_accept": "Georgio",
+  "dialog_georgio4_done_1": "Georgio",
+  "dialog_georgio4_done_2": "Georgio",
+  "dialog_georgio4_arrest_client": "Georgio",
+  "dialog_georgio_loan_5": "Georgio",
+  "dialog_georgio_loan_1": "Georgio",
+  "dialog_georgio_loan_2": "Georgio",
+  "dialog_georgio_loan_3": "Georgio",
+  "dialog_georgio_loan_4": "Georgio",
+  "dialog_georgio_loan_accept_small_1": "Georgio",
+  "dialog_georgio_loan_accept_small_2": "Georgio",
+  "dialog_georgio_loan_promise_1": "Georgio",
+  "dialog_georgio_loan_promise_2": "Georgio",
+  "dialog_georgio_loan_accept_large_1": "Georgio",
+  "dialog_georgio_loan_accept_large_2": "Georgio",
+  "dialog_georgio_loan_decline_1": "Georgio",
+  "dialog_georgio_loan_decline_2": "Georgio",
+  "dialog_georgio_loan_decline_3": "Georgio",
+  "dialog_georgio_loan_arrest_client": "Georgio",
+  "dialog_georgio_nuclear_1": "Georgio",
+  "dialog_georgio_nuclear_2": "Georgio",
+  "dialog_georgio_nuclear_3": "Georgio",
+  "dialog_georgio_nuclear_4": "Georgio",
+  "dialog_georgio_payback_1": "Georgio",
+  "dialog_georgio_payback_2": "Georgio",
+  "dialog_georgio_payback_3": "Georgio",
+  "dialog_georgio_payback_4": "Georgio",
+  "dialog_georgio_payback_done": "Georgio",
+  "dialog_eleanor_intro_1": "eleanor",
+  "dialog_eleanor_intro_2": "eleanor",
+  "dialog_eleanor_intro_3": "eleanor",
+  "dialog_eleanor_intro_4": "eleanor",
+  "dialog_eleanor_intro_5": "eleanor",
+  "dialog_eleanor_intro_6": "eleanor",
+  "dialog_eleanor_intro_7": "eleanor",
+  "dialog_eleanor2_1": "eleanor",
+  "dialog_eleanor2_2": "eleanor",
+  "dialog_eleanor2_3": "eleanor",
+  "dialog_eleanor2_4": "eleanor",
+  "dialog_eleanor2_5": "eleanor",
+  "dialog_eleanor2_6": "eleanor",
+  "dialog_eleanor2_7": "eleanor",
+  "dialog_eleanor2_8": "eleanor",
+  "dialog_eleanor2_9": "eleanor",
+  "dialog_eleanor3_1": "eleanor",
+  "dialog_eleanor3_2": "eleanor",
+  "dialog_eleanor3_3": "eleanor",
+  "dialog_eleanor3_no_family": "eleanor",
+  "dialog_eleanor3_4": "eleanor",
+  "dialog_eleanor3_5": "eleanor",
+  "dialog_eleanor3_6": "eleanor",
+  "dialog_eleanor3_7": "eleanor",
+  "dialog_eleanor3_8": "eleanor",
+  "dialog_eleanor4_1": "eleanor",
+  "dialog_eleanor4_2": "eleanor",
+  "dialog_eleanor4_3": "eleanor",
+  "dialog_eleanor4_4": "eleanor",
+  "dialog_eleanor4_5": "eleanor",
+  "dialog_eleanor4_6": "eleanor",
+  "dialog_eleanor4_7": "eleanor",
+  "dialog_eleanor4_8": "eleanor",
+  "dialog_eleanor4_9": "eleanor",
+  "dialog_eleanor4_accept": "eleanor",
+  "dialog_eleanor5_1": "eleanor",
+  "dialog_eleanor5_2": "eleanor",
+  "dialog_eleanor5_3": "eleanor",
+  "dialog_eleanor5_4": "eleanor",
+  "dialog_eleanor5_5": "eleanor",
+  "dialog_eleanor5_6": "eleanor",
+  "dialog_eleanor5_7": "eleanor",
+  "dialog_eleanor5_8": "eleanor",
+  "dialog_eleanor5_9": "eleanor",
+  "dialog_eleanor5_10": "eleanor",
+  "dialog_eleanor5_11": "eleanor",
+  "dialog_eleanor6_1": "eleanor",
+  "dialog_eleanor6_2": "eleanor",
+  "dialog_eleanor6_3": "eleanor",
+  "dialog_eleanor6_4": "eleanor",
+  "dialog_eleanor6_5": "eleanor",
+  "dialog_eleanor6_6": "eleanor",
+  "dialog_eleanor_scav_1": "eleanor",
+  "dialog_eleanor_scav_2": "eleanor",
+  "dialog_eleanor_scav_3": "eleanor",
+  "dialog_eleanor7_1": "eleanor",
+  "dialog_eleanor7_2": "eleanor",
+  "dialog_eleanor7_3": "eleanor",
+  "dialog_eleanor7_4": "eleanor",
+  "dialog_eleanor7_5": "eleanor",
+  "dialog_eleanor7_6": "eleanor",
+  "dialog_eleanor7_7": "eleanor",
+  "dialog_eleanor7_8": "eleanor",
+  "dialog_eleanor7_9": "eleanor",
+  "dialog_eleanor7_10": "eleanor",
+  "dialog_eleanor7_11": "eleanor",
+  "dialog_eleanor7_12": "eleanor",
+  "dialog_eleanor7_13": "eleanor",
+  "dialog_eleanor8_return_1": "eleanor",
+  "dialog_eleanor8_return_2": "eleanor",
+  "dialog_eleanor8_leak_1": "eleanor",
+  "dialog_eleanor8_leak_2": "eleanor",
+  "dialog_eleanor8_leak_3": "eleanor",
+  "dialog_eleanor8_4": "eleanor",
+  "dialog_eleanor8_1": "eleanor",
+  "dialog_eleanor8_2": "eleanor",
+  "dialog_eleanor8_3": "eleanor",
+  "dialog_eleanor9_free_1": "eleanor",
+  "dialog_eleanor9_free_2": "eleanor",
+  "dialog_eleanor9_free_3": "eleanor",
+  "dialog_eleanor9_thanks": "eleanor",
+  "dialog_eleanor9_free_gift": "eleanor",
+  "dialog_eleanor9_free_gift_2": "eleanor",
+  "dialog_eleanor9_free_bye": "eleanor",
+  "dialog_eleanor9_farewell_1": "eleanor",
+  "dialog_eleanor9_farewell_2": "eleanor",
+  "dialog_eleanor9_farewell_3": "eleanor",
+  "dialog_eleanor9_rev_1": "eleanor",
+  "dialog_eleanor9_rev_2": "eleanor",
+  "dialog_eleanor9_rev_3": "eleanor",
+  "dialog_eleanor9_rev_gift": "eleanor",
+  "dialog_eleanor9_rev_gun": "eleanor",
+  "dialog_eleanor9_rev_bye": "eleanor",
+  "dialog_eleanor6_to_go": "eleanor",
+  "dialog_eleanor_scav_enough_1": "eleanor",
+  "dialog_eleanor_scav_enough_2": "eleanor",
+  "dialog_eleanor_scav_all_done": "eleanor",
+  "dialog_eleanor_warned_1": "eleanor",
+  "dialog_eleanor_warned_2": "eleanor",
+  "dialog_eleanor_warned_3": "eleanor",
+  "dialog_eleanor_warned_4": "eleanor",
+  "dialog_eleanor_warned_5": "eleanor",
+  "dialog_eleanor_warned_leave": "eleanor",
+  "dialog_eleanor_arrest_client_1": "eleanor",
+  "dialog_eleanor_arrest_client_2": "eleanor",
+  "dialog_mentor_afterhours_1": "Mentor",
+  "dialog_mentor_afterhours_2": "Mentor",
+  "dialog_mentor_afterhours_3": "Mentor",
+  "dialog_mentor_afterhours_4": "Mentor",
+  "dialog_mentor_afterhours_5": "Mentor",
+  "dialog_mentor_afterhours_6": "Mentor",
+  "dialog_mentor_afterhours_7": "Mentor",
+  "dialog_mentor_intro_1": "Mentor",
+  "dialog_mentor_intro_2": "Mentor",
+  "dialog_mentor_intro_3": "Mentor",
+  "dialog_mentor_intro_4": "Mentor",
+  "dialog_mentor_intro_5": "Mentor",
+  "dialog_mentor_intro_6": "Mentor",
+  "dialog_mentor_intro_7": "Mentor",
+  "dialog_mentor_intro_8": "Mentor",
+  "dialog_mentor_intro_9": "Mentor",
+  "dialog_mentor_intro_10": "Mentor",
+  "dialog_mentor_intro2_1": "Mentor",
+  "dialog_mentor_intro2_2": "Mentor",
+  "dialog_mentor_intro2_3": "Mentor",
+  "dialog_mentor_intro2_4": "Mentor",
+  "dialog_mentor_intro2_5": "Mentor",
+  "dialog_mentor_intro2_6": "Mentor",
+  "dialog_mentor_intro2_7": "Mentor",
+  "dialog_mentor_shotgun_1": "Mentor",
+  "dialog_mentor_shotgun_2": "Mentor",
+  "dialog_mentor_shotgun_3": "Mentor",
+  "dialog_mentor_shotgun_4": "Mentor",
+  "dialog_mentor_shotgun_5": "Mentor",
+  "dialog_mentor_shotgun_6": "Mentor",
+  "dialog_mentor_shotgun_7": "Mentor",
+  "dialog_mentor_shotgun_8": "Mentor",
+  "dialog_mentor_shotgun_9": "Mentor",
+  "dialog_mentor_shotgun_10": "Mentor",
+  "dialog_mentor_shotgun_11": "Mentor",
+  "dialog_mentor_visual_1": "Mentor",
+  "dialog_mentor_visual_2": "Mentor",
+  "dialog_mentor_visual_3": "Mentor",
+  "dialog_mentor_visual_4": "Mentor",
+  "dialog_mentor_visual_5": "Mentor",
+  "dialog_mentor_visual_6": "Mentor",
+  "dialog_mentor_visual_7": "Mentor",
+  "dialog_mentor_visual_8": "Mentor",
+  "dialog_mentor_visual_9": "Mentor",
+  "dialog_mentor_visual_10": "Mentor",
+  "dialog_mentor_visual_11": "Mentor",
+  "dialog_mentor_display_case_1": "Mentor",
+  "dialog_mentor_display_case_2": "Mentor",
+  "dialog_mentor_display_case_3": "Mentor",
+  "dialog_mentor_display_case_4": "Mentor",
+  "dialog_mentor_display_case_reminder_6": "Mentor",
+  "dialog_mentor_display_case_reminder_7": "Mentor",
+  "dialog_mentor_display_case_reminder_1": "Mentor",
+  "dialog_mentor_display_case_reminder_2": "Mentor",
+  "dialog_mentor_display_case_reminder_3": "Mentor",
+  "dialog_mentor_display_case_reminder_4": "Mentor",
+  "dialog_mentor_display_case_reminder_5": "Mentor",
+  "dialog_mentor_sec_1": "Mentor",
+  "dialog_mentor_sec_2": "Mentor",
+  "dialog_mentor_sec_3": "Mentor",
+  "dialog_mentor_sec_4": "Mentor",
+  "dialog_mentor_sec_5": "Mentor",
+  "dialog_mentor_sec_6": "Mentor",
+  "dialog_mentor_sec_7": "Mentor",
+  "dialog_mentor_sec_8": "Mentor",
+  "dialog_mentor_permit_1": "Mentor",
+  "dialog_mentor_permit_2": "Mentor",
+  "dialog_mentor_permit_3": "Mentor",
+  "dialog_mentor_permit_4": "Mentor",
+  "dialog_mentor_permit_5": "Mentor",
+  "dialog_mentor_permit_6": "Mentor",
+  "dialog_mentor_permit_7": "Mentor",
+  "dialog_mentor_permit_8": "Mentor",
+  "dialog_mentor_permit_9": "Mentor",
+  "dialog_mentor_permit_10": "Mentor",
+  "dialog_mentor_bargain_1": "Mentor",
+  "dialog_mentor_bargain_2": "Mentor",
+  "dialog_mentor_bargain_3": "Mentor",
+  "dialog_mentor_bargain_4": "Mentor",
+  "dialog_mentor_bargain_5": "Mentor",
+  "dialog_mentor_bargain_6": "Mentor",
+  "dialog_mentor_bargain_7": "Mentor",
+  "dialog_mentor_bargain_8": "Mentor",
+  "dialog_mentor_outro_1": "Mentor",
+  "dialog_mentor_outro_2": "Mentor",
+  "dialog_mentor_outro_3": "Mentor",
+  "dialog_mentor_outro_4": "Mentor",
+  "dialog_mentor_outro_5": "Mentor",
+  "dialog_mentor_outro_6": "Mentor",
+  "dialog_mentor_outro_7": "Mentor",
+  "dialog_serpico1_1": "Serpico",
+  "dialog_serpico1_2": "Serpico",
+  "dialog_serpico1_3": "Serpico",
+  "dialog_serpico1_4": "Serpico",
+  "dialog_serpico1_5": "Serpico",
+  "dialog_serpico1_6": "Serpico",
+  "dialog_serpico1_7": "Serpico",
+  "dialog_serpico1_8": "Serpico",
+  "dialog_serpico3_1": "Serpico",
+  "dialog_serpico3_2": "Serpico",
+  "dialog_serpico3_3": "Serpico",
+  "dialog_serpico3_4": "Serpico",
+  "dialog_serpico3_5": "Serpico",
+  "dialog_serpico3_6": "Serpico",
+  "dialog_serpico3_7": "Serpico",
+  "dialog_serpico3_8": "Serpico",
+  "dialog_serpico4_1": "Serpico",
+  "dialog_serpico4_2": "Serpico",
+  "dialog_serpico4_3": "Serpico",
+  "dialog_serpico4_4": "Serpico",
+  "dialog_serpico4_5": "Serpico",
+  "dialog_serpico4_6": "Serpico",
+  "dialog_serpico6_1": "Serpico",
+  "dialog_serpico6_2": "Serpico",
+  "dialog_serpico6_3": "Serpico",
+  "dialog_serpico6_4": "Serpico",
+  "dialog_serpico6_5": "Serpico",
+  "dialog_serpico6_arrest_client": "Serpico",
+  "dialog_serpico7_rev_1": "Serpico",
+  "dialog_serpico7_rev_2": "Serpico",
+  "dialog_serpico7_rev_3": "Serpico",
+  "dialog_serpico7_bm_1": "Serpico",
+  "dialog_serpico7_bm_2": "Serpico",
+  "dialog_serpico7_bm_3": "Serpico",
+  "dialog_serpico7_sec_1": "Serpico",
+  "dialog_serpico7_sec_2": "Serpico",
+  "dialog_serpico7_1": "Serpico",
+  "dialog_serpico7_2": "Serpico",
+  "dialog_serpico7_3": "Serpico",
+  "dialog_serpico7_4": "Serpico",
+  "dialog_serpico7_5": "Serpico",
+  "dialog_serpico7_ask": "Serpico",
+  "dialog_serpico_end_rev_1": "Serpico",
+  "dialog_serpico_end_rev_2": "Serpico",
+  "dialog_serpico_end_rev_3": "Serpico",
+  "dialog_serpico_end_rev_4": "Serpico",
+  "dialog_serpico_end_rev_5": "Serpico",
+  "dialog_serpico_end_sec_1": "Serpico",
+  "dialog_serpico_end_sec_2": "Serpico",
+  "dialog_serpico_end_sec_3": "Serpico",
+  "dialog_serpico_end_sec_4": "Serpico",
+  "dialog_serpico_end_sec_5": "Serpico",
+  "dialog_serpico_end_bm_1": "Serpico",
+  "dialog_serpico_end_bm_2": "Serpico",
+  "dialog_serpico_end_bm_3": "Serpico",
+  "dialog_serpico_end_bm_4": "Serpico",
+  "dialog_serpico_end_bm_5": "Serpico",
+  "dialog_serpico_end_bm_accept": "Serpico",
+  "dialog_serpico_end_bm_done": "Serpico",
+  "dialog_wild_network_1": "wild",
+  "dialog_wild_network_2": "wild",
+  "dialog_wild_network_3": "wild",
+  "dialog_wild_network_4": "wild",
+  "dialog_wild_network_5": "wild",
+  "dialog_wild_network_6": "wild",
+  "dialog_wild_network_7": "wild",
+  "dialog_wild_network_8": "wild",
+  "dialog_wild_upgrade_reminder_1": "wild",
+  "dialog_wild_upgrade_reminder_2": "wild",
+  "dialog_wild_upgrade_reminder_3": "wild",
+  "dialog_wild_upgrade_reminder_4": "wild",
+  "dialog_wild_network_reminder_1": "wild",
+  "dialog_wild_network_reminder_2": "wild",
+  "dialog_wild_network_reminder_3": "wild",
+  "dialog_wild_network_reminder_4": "wild",
+  "dialog_wild_network_reminder_5": "wild",
+  "dialog_wild_bailout_1": "wild",
+  "dialog_wild_bailout_2": "wild",
+  "dialog_wild_bailout_3": "wild",
+  "dialog_wild_bailout_4": "wild",
+  "dialog_wild_deed_1": "wild",
+  "dialog_wild_deed_2": "wild",
+  "dialog_wild_deed_3": "wild",
+  "dialog_wild_deed_4": "wild",
+  "dialog_wild_deed_5": "wild",
+  "dialog_wild_deed_6": "wild",
+  "dialog_wild_deed_7": "wild",
+  "dialog_wild_deed_8": "wild",
+  "dialog_wild_deed_9": "wild",
+  "dialog_wild_cheng_1": "wild",
+  "dialog_wild_cheng_2": "wild",
+  "dialog_wild_cheng_3": "wild",
+  "dialog_wild_cheng_4": "wild",
+  "dialog_wild_cheng_5": "wild",
+  "dialog_wild_cheng_6": "wild",
+  "dialog_marketplace_intro_1": "wild",
+  "dialog_marketplace_intro_2": "wild",
+  "dialog_marketplace_intro_3": "wild",
+  "dialog_marketplace_intro_4": "wild",
+  "dialog_marketplace_intro_5": "wild",
+  "dialog_marketplace_intro_6": "wild",
+  "dialog_marketplace_intro_7": "wild",
+  "dialog_marketplace_intro_8": "wild",
+  "dialog_network_intro_1": "wild",
+  "dialog_network_intro_2": "wild",
+  "dialog_network_intro_3": "wild",
+  "dialog_network_intro_4": "wild",
+  "dialog_network_intro_5": "wild",
+  "dialog_network_intro_6": "wild",
+  "dialog_network_intro_7": "wild",
+  "dialog_network_intro_8": "wild",
+  "dialog_insurance_1": "wild",
+  "dialog_insurance_2": "wild",
+  "dialog_insurance_3": "wild",
+  "dialog_insurance_4": "wild",
+  "dialog_insurance_5": "wild",
+  "dialog_insurance_6": "wild",
+  "dialog_insurance_7": "wild",
+  "dialog_insurance_8": "wild",
+  "dialog_insurance_9": "wild",
+  "dialog_insurance_10": "wild",
+  "dialog_insurance_11": "wild",
+  "dialog_wanted5_1": "lou",
+  "dialog_wanted5_2": "lou",
+  "dialog_wanted5_3": "lou",
+  "dialog_wanted5_4": "lou",
+  "dialog_wanted5_tools_1": "lou",
+  "dialog_wanted5_tools_2": "lou",
+  "dialog_wanted5_5": "lou",
+  "dialog_wanted5_6": "lou",
+  "dialog_wanted5_7": "lou",
+  "dialog_wanted5_8": "lou",
+  "dialog_wanted5_arrest_client_1": "lou",
+  "dialog_wanted5_arrest_client_2": "lou",
+  "dialog_wanted5_arrest_client_3": "lou",
+  "dialog_wanted5morning_1": "lou",
+  "dialog_wanted5morning_2": "lou",
+  "dialog_wanted5morning_3": "lou",
+  "dialog_wanted5morning_4": "lou",
+  "dialog_wanted5morning_5": "lou",
+  "dialog_wanted5morning_6": "lou",
+  "dialog_wanted5morning_7": "lou",
+  "dialog_wanted5morning_8": "lou",
+  "dialog_wanted5morning_9": "lou",
+  "dialog_wanted5morning_10": "lou",
+  "dialog_wanted5morning_11": "lou",
+  "dialog_wanted5morning_12": "lou",
+  "dialog_lou_bomb_1": "lou",
+  "dialog_lou_bomb_2": "lou",
+  "dialog_lou_bomb_3": "lou",
+  "dialog_lou_bomb_4": "lou",
+  "dialog_lou_box_drop_1": "lou",
+  "dialog_lou_box_drop_2": "lou",
+  "dialog_lou_box_drop_3": "lou",
+  "dialog_lou_box_drop_4": "lou",
+  "dialog_lou_box_drop_5": "lou",
+  "dialog_lou_box_drop_6": "lou",
+  "dialog_lou_box_collect_1": "lou",
+  "dialog_lou_box_collect_2": "lou",
+  "dialog_lou_box_taken_1": "lou",
+  "dialog_lou_box_taken_2": "lou",
+  "dialog_lou_box_taken_3": "lou",
+  "dialog_lou_box_taken_4": "lou",
+  "dialog_lou_box_peeked_1": "lou",
+  "dialog_lou_box_peeked_2": "lou",
+  "dialog_lou_box_peeked_3": "lou",
+  "dialog_lou_box_peeked_4": "lou",
+  "dialog_lou_box_untouched_1": "lou",
+  "dialog_lou_box_untouched_2": "lou",
+  "dialog_lou_box_see_you": "lou",
+  "dialog_lou_disguise_1": "lou",
+  "dialog_lou_disguise_2": "lou",
+  "dialog_lou_disguise_3": "lou",
+  "dialog_lou_disguise_4": "lou",
+  "dialog_lou_disguise_5": "lou",
+  "dialog_lou_disguise_6": "lou",
+  "dialog_lou_disguise_7": "lou",
+  "dialog_lou_disguise_8": "lou",
+  "dialog_lou_disguise_9": "lou",
+  "dialog_lou_disguise_10": "lou",
+  "dialog_lou_disguise_accept_1": "lou",
+  "dialog_lou_disguise_accept_2": "lou",
+  "dialog_lou_disguise_dismiss_1": "lou",
+  "dialog_lou_disguise_dismiss_2": "lou",
+  "dialog_lou_demand_even": "lou",
+  "dialog_lou_demand_cash": "lou",
+  "dialog_lou_demand_cash_all": "lou",
+  "dialog_lou_demand_bomb_1": "lou",
+  "dialog_lou_demand_bomb_2": "lou",
+  "dialog_lou_demand_bomb_3": "lou",
+  "dialog_lou_demand_bomb_4": "lou",
+  "dialog_lou_demand_short": "lou",
+  "dialog_lou_demand_wait": "lou",
+  "dialog_lou_demand_1": "lou",
+  "dialog_lou_demand_2": "lou",
+  "dialog_lou_demand_3": "lou",
+  "dialog_lou_demand_enough": "lou",
+  "dialog_lou_demand_progress": "lou",
+  "dialog_lou_demand_remaining": "lou",
+  "dialog_wanted4_1": "odin",
+  "dialog_wanted4_2": "odin",
+  "dialog_wanted4_3": "odin",
+  "dialog_wanted4_4": "odin",
+  "dialog_wanted4_5": "odin",
+  "dialog_wanted4_6": "odin",
+  "dialog_wanted4_7": "odin",
+  "dialog_wanted4_8": "odin",
+  "dialog_wanted4_arrest_client": "odin",
+  "dialog_wanted4normal_1": "odin",
+  "dialog_wanted4normal_2": "odin",
+  "dialog_wanted4normal_3": "odin",
+  "dialog_wanted4normal_arrest_client": "odin",
+  "dialog_wanted2_1": "butcher",
+  "dialog_wanted2_2": "butcher",
+  "dialog_wanted2_3": "butcher",
+  "dialog_wanted2_warning_1": "butcher",
+  "dialog_wanted2_warning_2": "butcher",
+  "dialog_wanted2_warning_3": "butcher",
+  "dialog_wanted2_arrest_client": "butcher",
+  "dialog_wanted2_return_1": "butcher",
+  "dialog_wanted6_1": "li",
+  "dialog_wanted6_2": "li",
+  "dialog_wanted6_3": "li",
+  "dialog_wanted6_4": "li",
+  "dialog_wanted6_5": "li",
+  "dialog_wanted6_6": "li",
+  "dialog_wanted6_7": "li",
+  "dialog_wanted6_8": "li",
+  "dialog_wanted6_arrest_client": "li",
+  "dialog_wanted6_plea_1": "li",
+  "dialog_wanted6_plea_2": "li",
+  "dialog_wanted6_thanks": "li",
+  "dialog_wanted6_supply_leave": "li",
+  "dialog_wanted6_supply_1": "li",
+  "dialog_wanted6_supply_3": "li",
+  "dialog_wanted6_supply_4": "li",
+  "dialog_wanted6_supply_2": "li",
+  "dialog_wanted6_supply_5": "li",
+  "dialog_wanted6_supply_6": "li",
+  "dialog_wanted6_supply_none": "li",
+  "dialog_wanted6_supply_enough": "li",
+  "dialog_wanted6_finale_1": "li",
+  "dialog_wanted6_finale_2": "li",
+  "dialog_wanted6_finale_3": "li",
+  "dialog_wanted6_finale_4": "li",
+  "dialog_wanted7_plea_1": "juan",
+  "dialog_wanted7_plea_2": "juan",
+  "dialog_wanted7_plea_thanks": "juan",
+  "dialog_wanted7_2": "juan",
+  "dialog_wanted7_return_2": "juan",
+  "dialog_wanted7_1": "juan",
+  "dialog_wanted9_arrest_client": "leroy",
+  "dialog_wanted1_1": "bailey",
+  "dialog_wanted1_2": "bailey",
+  "dialog_wanted1_3": "bailey",
+  "dialog_wanted1_plea_1": "bailey",
+  "dialog_wanted1_plea_2": "bailey",
+  "dialog_wanted1_plea_3": "bailey",
+  "dialog_wanted1_arrest_client": "bailey",
+  "dialog_wanted1_return_1": "bailey",
+  "dialog_wanted1_return_2": "bailey",
+  "dialog_wanted1_return_3": "bailey",
+  "dialog_wanted3_1": "arthur",
+  "dialog_wanted3_2": "arthur",
+  "dialog_wanted3_plea_1": "arthur",
+  "dialog_wanted3_plea_2": "arthur",
+  "dialog_wanted3_plea_3": "arthur",
+  "dialog_wanted3_thanks": "arthur",
+  "dialog_wanted8_1": "john",
+  "dialog_wanted8_2": "john",
+  "dialog_wanted8_3": "john",
+  "dialog_wanted8_4": "john",
+  "dialog_wanted8_5": "john",
+  "dialog_wanted8_6": "john",
+  "dialog_wanted8_arrest_client": "john",
+  "dialog_wanted8_return_1": "john",
+  "dialog_wanted8_return_2": "john",
+  "dialog_wanted8_return_3": "john",
+  "dialog_wanted8_return_4": "john",
+  "dialog_wanted8_return_5": "john",
+  "dialog_wanted8_return_arrest_client": "john",
+  "dialog_wanted8_vandal_1": "john",
+  "dialog_wanted8_vandal_2": "john",
+  "dialog_wanted8_vandal_3": "john",
+  "dialog_wanted8_vandal_arrest_client": "john"
+ },
+ "spriteOf": {
+  "lun": [
+   "officer_lun"
+  ],
+  "jackson": [
+   "inventor",
+   "dr._jackson"
+  ],
+  "landlord": [
+   "landlord",
+   "the_landlord"
+  ],
+  "Georgio": [
+   "george"
+  ],
+  "eleanor": [
+   "eleanor1",
+   "eleanor2",
+   "eleanor3",
+   "eleanor_scav",
+   "eleanor_rev"
+  ],
+  "Mentor": [
+   "mentor",
+   "the_mentor"
+  ],
+  "Serpico": [
+   "serpico",
+   "serpico_scav",
+   "serpico_rev"
+  ],
+  "wild": [
+   "joe",
+   "joe_wild",
+   "wild"
+  ],
+  "lou": [
+   "wanted5",
+   "lou_sec"
+  ],
+  "odin": [
+   "odin",
+   "wanted4"
+  ],
+  "butcher": [
+   "wanted2"
+  ],
+  "li": [
+   "wanted6"
+  ],
+  "juan": [
+   "wanted7"
+  ],
+  "leroy": [
+   "wanted9"
+  ],
+  "bailey": [
+   "wanted1"
+  ],
+  "arthur": [
+   "wanted3"
+  ],
+  "john": [
+   "wanted8"
+  ]
+ },
+ "spriteLines": {
+  "eleanor_rev": {
+   "dialog_eleanor9_thanks": "05_埃莉诺/埃莉诺_真相与选择六格_v1__06_革命军沉痛告别.png",
+   "dialog_eleanor9_farewell_1": "05_埃莉诺/埃莉诺_真相与选择六格_v1__06_革命军沉痛告别.png",
+   "dialog_eleanor9_farewell_2": "05_埃莉诺/埃莉诺_真相与选择六格_v1__06_革命军沉痛告别.png",
+   "dialog_eleanor9_farewell_3": "05_埃莉诺/埃莉诺_真相与选择六格_v1__06_革命军沉痛告别.png"
+  },
+  "serpico_rev": {
+   "dialog_serpico_end_bm_5": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__04_加入革命军.png",
+   "dialog_serpico_end_bm_accept": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__04_加入革命军.png",
+   "dialog_serpico_end_bm_done": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__04_加入革命军.png"
+  },
+  "serpico": {
+   "dialog_serpico_end_bm_5": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__06_重返制服.png",
+   "dialog_serpico_end_bm_accept": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__06_重返制服.png",
+   "dialog_serpico_end_bm_done": "07_塞尔皮科/塞尔皮科_三路线结局六格_v1__06_重返制服.png"
+  }
+ },
+ "keyContext": {
+  "dialog_serpico6_1": {
+   "event": "serpico6"
+  },
+  "dialog_serpico_end_rev_1": {
+   "event": "serpicoConclusion",
+   "sprite": "serpico_rev"
+  },
+  "dialog_serpico_end_bm_1": {
+   "event": "serpicoConclusion",
+   "sprite": "serpico_scav"
+  }
+ }
+}

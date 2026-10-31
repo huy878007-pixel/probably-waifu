@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深空娘化 · 立绘工作台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <b>深空娘化 · 立绘工作台</b>
+    <span class="sub" id="buildTag"></span>
+  </div>
+  <div class="progress" id="progress"></div>
+  <span id="saveStatus" class="save-status" role="status" aria-live="polite">正在读取</span>
+  <div class="actions">
+    <button id="btnExport" class="btn primary" title="导出包含场景、路线和配图的工作台方案；不是游戏运行时文件">导出配图方案</button>
+    <button id="btnBackup" class="btn">备份手工标注</button>
+    <button id="btnRestore" class="btn" title="用备份覆盖当前内容">还原备份</button>
+    <button id="btnExportChar" class="btn">只导出当前角色</button>
+    <label class="btn" for="fileImport">导入</label>
+    <input type="file" id="fileImport" accept=".json" hidden>
+    <button id="btnCopy" class="btn">复制到剪贴板</button>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="chars" id="charList"></aside>
+
+  <section class="stage">
+    <div class="stage-head">
+      <h2 id="charTitle">选择角色</h2>
+      <div class="stage-tools">
+        <button id="btnUndo" class="btn tiny" title="Ctrl+Z">撤销</button>
+        <button id="btnRedo" class="btn tiny" title="Ctrl+Shift+Z / Ctrl+Y">重做</button>
+        <select id="stageFilter" class="stage-filter" title="只显示某一套阶段立绘的卡"></select>
+        <label class="switch"><input type="checkbox" id="onlyDef"> 含默认图的场景</label>
+        <label class="switch"><input type="checkbox" id="onlyUnas"> 含未标注的场景</label>
+        <label class="switch"><input type="checkbox" id="reviewOnly"> 与复核图不同</label>
+        <button class="btn tiny" id="btnClearChar">清空本角色</button>
+      </div>
+    </div>
+    <div class="hint" id="hint">
+      框选台词 → 点立绘上色；或直接把立绘拖到格子上。<b>双击立绘</b>=整场套用，<b>右键立绘</b>=批量（本场/本角色），Ctrl+Z 撤销。
+    </div>
+    <div class="searchbar"><input id="dialogSearch" type="search" aria-label="搜索当前角色台词、钩子或事件" placeholder="搜索台词、钩子、事件或条件…"><span id="resultCount"></span><button id="resetFilters" class="btn tiny">清除筛选</button></div>
+    <div id="events"></div>
+  </section>
+
+  <aside class="tray">
+    <div class="tray-head">
+      <h3>立绘</h3>
+      <input type="search" id="trayFilter" aria-label="搜索立绘名称" placeholder="过滤名称…">
+    </div>
+    <section id="selectionInfo" class="selection-info" aria-label="选中台词详情"></section>
+    <div id="trayBody" class="tray-body"></div>
+  </aside>
+</main>
+
+<div class="preview" id="preview" hidden>
+  <img id="previewImg" alt="">
+  <div class="preview-info">
+    <div id="previewName"></div>
+    <div id="previewText"></div>
+  </div>
+</div>
+
+<div class="ctx" id="ctx" hidden></div>
+
+<script src="data.js"></script>
+<script src="release-data.js"></script>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
