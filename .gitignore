@@ -2,3 +2,6 @@
 workbench/_audit/
 workbench/.browser-profile/
 *.tmp
+
+**/bin/
+**/obj/

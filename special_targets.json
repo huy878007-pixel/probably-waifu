@@ -1,0 +1,139 @@
+[
+  {
+    "scene": 1,
+    "root": "--InventorScene",
+    "children": [
+      0
+    ],
+    "name": "inventor_scene",
+    "key": "drjackson2",
+    "component": "SpriteRenderer"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9,
+      4,
+      2,
+      0
+    ],
+    "name": "Portait",
+    "key": "wanted_portait3",
+    "component": "Image"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9,
+      4,
+      8,
+      0
+    ],
+    "name": "Portait",
+    "key": "wanted_portait9",
+    "component": "Image"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9,
+      4,
+      0,
+      0
+    ],
+    "name": "Portait",
+    "key": "wanted_portait1",
+    "component": "Image"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9,
+      4,
+      4,
+      0
+    ],
+    "name": "Portait",
+    "key": "wanted_portait5",
+    "component": "Image"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9,
+      4,
+      7,
+      0
+    ],
+    "name": "Portait",
+    "key": "wanted_portait8",
+    "component": "Image"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9,
+      4,
+      6,
+      0
+    ],
+    "name": "Portait",
+    "key": "wanted_portait7",
+    "component": "Image"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9,
+      4,
+      1,
+      0
+    ],
+    "name": "Portait",
+    "key": "wanted_portait2",
+    "component": "Image"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9,
+      4,
+      5,
+      0
+    ],
+    "name": "Portait",
+    "key": "wanted_portait6",
+    "component": "Image"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9,
+      4,
+      3,
+      0
+    ],
+    "name": "Portait",
+    "key": "wanted_portait4",
+    "component": "Image"
+  },
+  {
+    "scene": 1,
+    "root": "CanvasPaperUI",
+    "children": [
+      9
+    ],
+    "name": "_WantedPanel",
+    "key": "wanted",
+    "component": "Image"
+  }
+]
