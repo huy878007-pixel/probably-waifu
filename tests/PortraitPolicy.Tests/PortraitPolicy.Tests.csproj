@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../src/LaunchGiftPortraits.Content/PortraitPolicy.cs" Link="PortraitPolicy.cs" />
+    <ProjectReference Include="../../../src/PortraitRuntime.Core/PortraitRuntime.Core.csproj" />
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameManaged)/Newtonsoft.Json.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

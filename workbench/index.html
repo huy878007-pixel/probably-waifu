@@ -15,6 +15,8 @@
   <div class="progress" id="progress"></div>
   <span id="saveStatus" class="save-status" role="status" aria-live="polite">正在读取</span>
   <div class="actions">
+    <button id="btnReview" class="btn primary">人工逐项审阅</button>
+    <a class="btn" href="../../PortraitMaterialPolish/artifacts/mapping-audit-20261108/映射缺项复核.html" target="_blank" rel="noopener">映射缺项清单</a>
     <button id="btnExport" class="btn primary" title="导出包含场景、路线和配图的工作台方案；不是游戏运行时文件">导出配图方案</button>
     <button id="btnBackup" class="btn">备份手工标注</button>
     <button id="btnRestore" class="btn" title="用备份覆盖当前内容">还原备份</button>
@@ -31,13 +33,14 @@
   <section class="stage">
     <div class="stage-head">
       <h2 id="charTitle">选择角色</h2>
+      <button id="openEleanor" class="btn tiny">直达埃莉诺</button>
       <div class="stage-tools">
         <button id="btnUndo" class="btn tiny" title="Ctrl+Z">撤销</button>
         <button id="btnRedo" class="btn tiny" title="Ctrl+Shift+Z / Ctrl+Y">重做</button>
         <select id="stageFilter" class="stage-filter" title="只显示某一套阶段立绘的卡"></select>
         <label class="switch"><input type="checkbox" id="onlyDef"> 含默认图的场景</label>
         <label class="switch"><input type="checkbox" id="onlyUnas"> 含未标注的场景</label>
-        <label class="switch"><input type="checkbox" id="reviewOnly"> 与复核图不同</label>
+        <label class="switch"><input type="checkbox" id="reviewOnly"> 与旧参考图不同</label>
         <button class="btn tiny" id="btnClearChar">清空本角色</button>
       </div>
     </div>
@@ -53,6 +56,11 @@
       <h3>立绘</h3>
       <input type="search" id="trayFilter" aria-label="搜索立绘名称" placeholder="过滤名称…">
     </div>
+    <nav class="review-nav" aria-label="逐句核对">
+      <button id="prevLine" class="btn tiny">上一句</button>
+      <span id="linePosition" aria-live="polite"></span>
+      <button id="nextLine" class="btn tiny">下一句</button>
+    </nav>
     <section id="selectionInfo" class="selection-info" aria-label="选中台词详情"></section>
     <div id="trayBody" class="tray-body"></div>
   </aside>
@@ -70,7 +78,10 @@
 
 <script src="data.js"></script>
 <script src="release-data.js"></script>
+<script src="source-data.js"></script>
 <script src="logic.js"></script>
 <script src="app.js"></script>
+<script src="runtime-data.js"></script>
+<script src="review.js"></script>
 </body>
 </html>

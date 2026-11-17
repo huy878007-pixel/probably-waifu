@@ -1,3 +1,4 @@
+﻿using System.Globalization;
 using System.Reflection;
 using Newtonsoft.Json;
 using UnityEngine;
@@ -16,13 +17,21 @@ public sealed class DisplaySettings
     const string WindowId = "launchgift_settings";
 
     [JsonProperty("crisp")] public bool Crisp { get; set; } = true;
+    [JsonProperty("ordinaryCustomerBeauty")] public bool OrdinaryCustomerBeauty { get; set; } = true;
+    /// <summary>跨存档的用户配置：初次设置引导还没完成（或从未跑过）。</summary>
+    [JsonProperty("guidePending")] public bool GuidePending { get; set; } = true;
+    /// <summary>独立于引导完成状态：玩家允许小小日常来采购才进入排程。</summary>
+    [JsonProperty("xiaoxiaoVisitsEnabled")] public bool XiaoxiaoVisitsEnabled { get; set; }
+    // 默认值即用户确认的外观：大立绘、对话框下移、不翻转。已有 ui.json 里的数值优先。
+    [JsonProperty("portraitSize")] public string PortraitSize { get; set; } = "large";
     [JsonProperty("portraitScale")] public float PortraitScale { get; set; } = 1;
     [JsonProperty("portraitX")] public float PortraitX { get; set; }
     [JsonProperty("portraitY")] public float PortraitY { get; set; }
-    [JsonProperty("bubbleX")] public float BubbleX { get; set; }
-    [JsonProperty("bubbleY")] public float BubbleY { get; set; }
-    [JsonProperty("nameX")] public float NameX { get; set; }
-    [JsonProperty("nameY")] public float NameY { get; set; }
+    [JsonProperty("bubbleX")] public float BubbleX { get; set; } = 104;
+    [JsonProperty("bubbleY")] public float BubbleY { get; set; } = -182;
+    [JsonProperty("bubbleFlipY")] public bool BubbleFlipY { get; set; }
+    [JsonProperty("nameX")] public float NameX { get; set; } = 104;
+    [JsonProperty("nameY")] public float NameY { get; set; } = -182;
     [JsonProperty("hotkey")] public string Hotkey { get; set; } = "F10";
 
     [JsonIgnore] public bool HasPortraitAdjustment => PortraitX != 0 || PortraitY != 0 || PortraitScale != 1;
@@ -33,28 +42,53 @@ public sealed class DisplaySettings
     GameObject blocker;
     CustomUIWindow window;
     CustomUIBuilder builder;
-    Transform portrait, bubble, name;
-    Vector3 portraitBase, portraitSize, bubbleBase, nameBase;
+    Transform bubble, name;
+    Image bubbleBackground, nameBackground;
+    BubbleFrameFlip bubbleFlip, nameFlip;
+    readonly BubbleTextFlip bubbleTextFlip = new(), nameTextFlip = new();
+    readonly BubblePlacement placement = new();
     object camera;
-    bool savedUpscale, cameraOwned, portraitOwned;
+    bool savedUpscale, cameraOwned;
 
     public void Load(string file)
     {
         path = file;
+        bool migrated = false;
         if (File.Exists(file))
         {
-            try { JsonConvert.PopulateObject(File.ReadAllText(file), this); }
+            try
+            {
+                var text = File.ReadAllText(file);
+                JsonConvert.PopulateObject(text, this);
+                if (Newtonsoft.Json.Linq.JObject.Parse(text)["portraitSize"] == null)
+                {
+                    if (!File.Exists(file + ".pre-fit.bak")) File.Copy(file, file + ".pre-fit.bak");
+                    PortraitScale = 1; PortraitX = PortraitY = 0;
+                    migrated = true;
+                }
+            }
             catch (JsonException e) { Warn("Invalid ui.json; using available defaults: " + e.Message); }
         }
+        // 上方阅读整体上移 20：气泡与姓名同步移动，保持原有的相对关系。只认精确的旧预设数值。
+        if (BubbleFlipY && BubbleX == 87 && NameX == 87 && NameY == 98 && (BubbleY == 170 || BubbleY == 190))
+        {
+            if (!File.Exists(file + ".pre-upper-shift.bak")) { try { File.Copy(file, file + ".pre-upper-shift.bak"); } catch (IOException) { } }
+            BubbleY = 190; NameY = 118;
+            migrated = true;
+            Warn("Upper preset shifted up: bubble 190 / name 118");
+        }
         Normalize();
+        if (migrated) Save();
     }
     /// <summary>Keep every value inside the range the native window offers, and sanitise NaN.</summary>
     public void Normalize()
     {
-        PortraitScale = Clamp(PortraitScale, .6f, 1.6f, 1);
-        PortraitX = Clamp(PortraitX, -300, 300, 0); PortraitY = Clamp(PortraitY, -300, 300, 0);
-        BubbleX = Clamp(BubbleX, -600, 600, 0); BubbleY = Clamp(BubbleY, -600, 600, 0);
-        NameX = Clamp(NameX, -600, 600, 0); NameY = Clamp(NameY, -600, 600, 0);
+        if (PortraitSize != "small" && PortraitSize != "medium" && PortraitSize != "large") PortraitSize = "large";
+        PortraitScale = Clamp(PortraitScale, .5f, 2f, 1);
+        // The portrait lives in world units (~2 units tall), so tens of units already leave the frame.
+        PortraitX = Clamp(PortraitX, -1, 1, 0); PortraitY = Clamp(PortraitY, -1, 1, 0);
+        BubbleX = Clamp(BubbleX, -400, 400, 0); BubbleY = Clamp(BubbleY, -400, 400, 0);
+        NameX = Clamp(NameX, -400, 400, 0); NameY = Clamp(NameY, -400, 400, 0);
     }
     static float Clamp(float value, float min, float max, float fallback) =>
         float.IsNaN(value) || float.IsInfinity(value) ? fallback : Math.Max(min, Math.Min(max, value));
@@ -62,37 +96,111 @@ public sealed class DisplaySettings
     public void Save()
     {
         if (path == null) return;
-        try { File.WriteAllText(path, JsonConvert.SerializeObject(this, Formatting.Indented)); }
+        try
+        {
+            File.WriteAllText(path, JsonConvert.SerializeObject(this, Formatting.Indented));
+            Warn(FormattableString.Invariant($"Display settings saved: bubbleFlipY={BubbleFlipY} bubble=({BubbleX},{BubbleY}) name=({NameX},{NameY})"));
+        }
         catch (Exception e) { Warn("Cannot save ui.json: " + e.Message); }
     }
     /// <summary>Write to a new location and remember it, used when migrating the legacy core file.</summary>
     public void Save(string file) { path = file; Save(); }
 
+    public void SetOrdinaryCustomerBeauty(bool enabled)
+    {
+        if (OrdinaryCustomerBeauty == enabled) return;
+        OrdinaryCustomerBeauty = enabled;
+        SpritePresenter.Clear();
+        PortraitPolicy.RefreshPreferences();
+        Warn("Ordinary customer beauty: " + enabled);
+    }
+
+    /// <summary>引导完成或主动跳过后才关闭；中途退出保留 true，下次来客还会遇到她。</summary>
+    public void SetGuidePending(bool pending)
+    {
+        if (GuidePending == pending) return;
+        GuidePending = pending;
+        Save();
+        RefreshValues();
+        Warn("Xiaoxiao guide pending: " + pending);
+        ModSettingsBridge.SyncFromSettings();
+    }
+
+    public void SetXiaoxiaoVisits(bool enabled)
+    {
+        if (XiaoxiaoVisitsEnabled == enabled) return;
+        XiaoxiaoVisitsEnabled = enabled;
+        Save();
+        RefreshValues();
+        Warn("Xiaoxiao visits allowed: " + enabled);
+        ModSettingsBridge.SyncFromSettings();
+    }
+
+    /// <summary>
+    /// 三种气泡/姓名框预设。立绘大小与预设无关，保留在 <see cref="PortraitSize"/> 里。
+    /// 这三组数值是用户已确认的正式配置，不要自行"校正"；用户可以在 F10 里继续微调。
+    /// </summary>
+    public void ApplyBubblePreset(string preset)
+    {
+        placement.Restore();
+        switch (preset)
+        {
+            case "vanilla": BubbleX = BubbleY = NameX = NameY = 0; BubbleFlipY = false; break;
+            case "lower": BubbleX = NameX = 104; BubbleY = NameY = -182; BubbleFlipY = false; break;
+            case "upper": BubbleX = NameX = 87; BubbleY = 190; NameY = 118; BubbleFlipY = true; break;
+            default: Warn("Unknown bubble preset: " + preset); return;
+        }
+        ApplyBubbleFlip();
+        placement.Apply(BubbleX, BubbleY, BubbleFlipY, NameX, NameY);
+        RefreshValues();
+        Warn("Bubble preset: " + preset);
+    }
+
     public void CaptureBubble(DialogUIManager ui)
     {
         if (ui == null) return;
-        if (bubble != ui.clientBubble?.transform) { bubble = ui.clientBubble?.transform; if (bubble != null) bubbleBase = bubble.localPosition; }
-        if (name != ui.clientNameBubble?.transform) { name = ui.clientNameBubble?.transform; if (name != null) nameBase = name.localPosition; }
+        var nextBubble = ui.clientBubble != null ? ui.clientBubble.transform : null;
+        bubble = nextBubble;
+        var nextName = ui.clientNameBubble != null ? ui.clientNameBubble.transform : null;
+        name = nextName;
+        placement.Bind(ui);
+        CaptureFrame(ui.clientBubble != null ? ui.clientBubble.backgroundImage : null, ref bubbleBackground, ref bubbleFlip);
+        CaptureFrame(ui.clientNameBubbleImage, ref nameBackground, ref nameFlip);
+        bubbleTextFlip.Bind(ui.clientBubble != null && ui.clientBubble.textfield != null ? ui.clientBubble.textfield.rectTransform : null, bubbleBackground != null ? bubbleBackground.rectTransform : null);
+        nameTextFlip.Bind(ui.clientNameTMP != null ? ui.clientNameTMP.rectTransform : null, nameBackground != null ? nameBackground.rectTransform : null);
+    }
+
+    static void CaptureFrame(Image next, ref Image current, ref BubbleFrameFlip flip)
+    {
+        if (current == next) return;
+        if (flip != null) flip.enabled = false;
+        current = next;
+        flip = null;
+    }
+
+    static void ApplyFrameFlip(Image image, ref BubbleFrameFlip flip, bool enabled)
+    {
+        if (image == null) return;
+        if (enabled && flip == null)
+            flip = image.GetComponent<BubbleFrameFlip>() ?? image.gameObject.AddComponent<BubbleFrameFlip>();
+        if (flip != null && flip.enabled != enabled) flip.enabled = enabled;
+    }
+
+    void ApplyBubbleFlip()
+    {
+        ApplyFrameFlip(bubbleBackground, ref bubbleFlip, BubbleFlipY);
+        ApplyFrameFlip(nameBackground, ref nameFlip, BubbleFlipY);
+        bubbleTextFlip.Apply(BubbleFlipY);
+        nameTextFlip.Apply(BubbleFlipY);
     }
 
     /// <summary>Applies preferences to the live portrait. Called every LateUpdate by the Mod's pump.</summary>
     public void Apply(bool replaced)
     {
-        var image2 = StoreClientMono.Instance?.image;
-        var target = image2 != null ? image2.transform : null;
-        if (target != portrait) { ResetPortrait(); portrait = target; }
-        bool moving = StoreClientMono.Instance != null && StoreClientMono.Instance.IsMoving();
-        if (portrait != null && replaced && HasPortraitAdjustment && !moving && image2.gameObject.activeInHierarchy)
-        {
-            if (!portraitOwned) { portraitBase = portrait.localPosition; portraitSize = portrait.localScale; }
-            portrait.localPosition = portraitBase + new Vector3(PortraitX, PortraitY);
-            portrait.localScale = portraitSize * PortraitScale;
-            portraitOwned = true;
-        }
-        else if (portraitOwned) ResetPortrait();
+        PortraitLayoutPolicy.Update();
 
-        if (bubble != null && (BubbleX != 0 || BubbleY != 0)) bubble.localPosition = bubbleBase + new Vector3(BubbleX, BubbleY);
-        if (name != null && (NameX != 0 || NameY != 0)) name.localPosition = nameBase + new Vector3(NameX, NameY);
+        placement.Apply(BubbleX, BubbleY, BubbleFlipY, NameX, NameY);
+        ApplyBubbleFlip();
 
         if (EmporiumEntry.Instance == null) { RestoreCamera(); return; }
         var cam = GameAccess.PixelPerfectCamera();
@@ -114,21 +222,17 @@ public sealed class DisplaySettings
         cameraOwned = false;
     }
 
-    public void ResetPortrait()
-    {
-        if (portraitOwned && portrait != null) { portrait.localPosition = portraitBase; portrait.localScale = portraitSize; }
-        portraitOwned = false;
-        if (portrait != null && portrait != StoreClientMono.Instance?.image?.transform) portrait = null;
-    }
-
     public void Restore()
     {
         if (blocker != null) UObj.Destroy(blocker);
         blocker = null;
         RestoreCamera();
-        ResetPortrait();
-        if (bubble != null) bubble.localPosition = bubbleBase;
-        if (name != null) name.localPosition = nameBase;
+
+        placement.Restore();
+        if (bubbleFlip != null) bubbleFlip.enabled = false;
+        if (nameFlip != null) nameFlip.enabled = false;
+        bubbleTextFlip.Restore();
+        nameTextFlip.Restore();
     }
 
     // ---- native F10 window ---------------------------------------------------
@@ -159,19 +263,54 @@ public sealed class DisplaySettings
         builder = manager.CreateWindow(WindowId, "深空娘化 · 显示设置", "overlay", null, CustomUIManager.Style.Machinery)
             .SetCloseOnEscape(true).SetDraggable(false).OnClose(Cleanup);
         builder.AddLabel("F10 开关此窗口 · Esc 关闭", "hint");
+        builder.BeginScrollFlexible();
+        builder.AddSpace(2f);
+        builder.AddHeader("美化范围", null);
+        builder.AddToggle("普通顾客娘化", OrdinaryCustomerBeauty, SetOrdinaryCustomerBeauty, "ordinary_beauty");
+        builder.AddLabel("关闭后普通客人恢复原版 · 剧情角色保留美化", "ordinary_hint");
+        builder.AddSpace(2f);
+        builder.AddHeader("小小", null);
+        builder.AddToggle("允许小小日常来访", XiaoxiaoVisitsEnabled, SetXiaoxiaoVisits, "xiaoxiao_visits");
+        builder.AddLabel("上层区声望 · 每天最多一次 · 摆上海豹团子概率翻倍", "xiaoxiao_hint");
+        builder.AddToggle("重新开启小小引导", GuidePending, SetGuidePending, "guide_pending");
+        builder.AddLabel("打开后下一次来客优先见到她 · 完成或跳过后自动关闭", "guide_hint");
         builder.AddSpace(2f);
         builder.AddHeader("对话框", null);
-        SliderRow(builder, "气泡 X", -600f, 600f, BubbleX, "bx", value => BubbleX = value);
-        SliderRow(builder, "气泡 Y", -600f, 600f, BubbleY, "by", value => BubbleY = value);
-        SliderRow(builder, "姓名框 X", -600f, 600f, NameX, "nx", value => NameX = value);
-        SliderRow(builder, "姓名框 Y", -600f, 600f, NameY, "ny", value => NameY = value);
+        builder.BeginRow(6f, TextAnchor.MiddleCenter);
+        Fix(builder.AddButton("原版位置", () => ApplyBubblePreset("vanilla"), "bubble_vanilla").Last, 130f);
+        Fix(builder.AddButton("下移位置", () => ApplyBubblePreset("lower"), "bubble_lower").Last, 130f);
+        Fix(builder.AddButton("上方阅读", () => ApplyBubblePreset("upper"), "bubble_upper").Last, 130f);
+        builder.End();
+        builder.AddToggle("气泡外框上下翻转（文字保持正向）", BubbleFlipY, value =>
+        {
+            BubbleFlipY = value;
+            ApplyBubbleFlip();
+            Warn("Bubble frame flip: " + value);
+            RefreshNameLock();
+        }, "bubble_flip");
+        SliderRow(builder, "气泡 X", -400f, 400f, BubbleX, "bx", value => BubbleX = value);
+        SliderRow(builder, "气泡 Y", -400f, 400f, BubbleY, "by", value => BubbleY = value);
+        SliderRow(builder, "姓名框 X", -400f, 400f, NameX, "nx", value => NameX = value);
+        SliderRow(builder, "姓名框 Y", -400f, 400f, NameY, "ny", value => NameY = value);
+        builder.AddLabel("上方阅读：姓名框绑定左下角，X/Y 暂停使用", "name_locked");
         builder.AddSpace(2f);
         builder.AddToggle("高清立绘（关闭像素放大）", Crisp, value => Crisp = value, "crisp");
         builder.AddSpace(2f);
         builder.AddHeader("角色立绘", null);
-        SliderRow(builder, "缩放", .6f, 1.6f, PortraitScale, "ps", value => PortraitScale = value);
-        SliderRow(builder, "立绘 X", -300f, 300f, PortraitX, "px", value => PortraitX = value);
-        SliderRow(builder, "立绘 Y", -300f, 300f, PortraitY, "py", value => PortraitY = value);
+        builder.AddLabel("等比例适配 · 下沿贴齐 · 保留原生动画", "fit_hint");
+        builder.BeginRow(6f, TextAnchor.MiddleCenter);
+        Fix(builder.AddButton("小", () => SelectSize("small"), "size_small").Last, 130f);
+        Fix(builder.AddButton("中", () => SelectSize("medium"), "size_medium").Last, 130f);
+        Fix(builder.AddButton("大", () => SelectSize("large"), "size_large").Last, 130f);
+        builder.End();
+        builder.AddLabel(SizeLabel(), "size_current");
+        builder.AddHeader("自由微调", null);
+        builder.AddLabel("以所选档位为基础 · 1.00 为标准倍率 · 正 X 向右 / 正 Y 向上", "fine_hint");
+        SliderRow(builder, "倍率", .5f, 2f, PortraitScale, "ps", value => PortraitScale = value);
+        SliderRow(builder, "水平 X", -1f, 1f, PortraitX, "px", value => PortraitX = value);
+        SliderRow(builder, "垂直 Y", -1f, 1f, PortraitY, "py", value => PortraitY = value);
+        builder.AddButton("重置微调", () => SelectSize(PortraitSize), "reset_fine");
+        builder.End(); // scroll content; keep the save/close buttons outside it
         builder.AddSpace(2f);
         builder.BeginRow(6f, TextAnchor.MiddleCenter);
         Fix(builder.AddButton("保存", Save, "save").Last, 96f);
@@ -179,7 +318,8 @@ public sealed class DisplaySettings
         Fix(builder.AddButton("关闭", ClosePanel, "close").Last, 96f);
         builder.End();
         window = builder.Show();
-        try { window.SetSize(460f, 520f); window.Center(); }
+        RefreshNameLock();
+        try { window.SetSize(560f, 560f); window.Center(); }
         catch (Exception e) { Warn("Window sizing failed: " + e.Message); }
         try
         {
@@ -191,6 +331,18 @@ public sealed class DisplaySettings
             if (header != null) header.gameObject.AddComponent<PanelDrag>().target = (RectTransform)window.root.transform;
         }
         catch (Exception e) { Warn("Header drag unavailable: " + e.Message); }
+    }
+
+    string SizeLabel() => "当前：" + (PortraitSize == "small" ? "小" : PortraitSize == "large" ? "大" : "中");
+
+    public void SelectSize(string size)
+    {
+        PortraitSize = size;
+        PortraitScale = 1;
+        PortraitX = PortraitY = 0;
+        PortraitLayoutPolicy.Update();
+        RefreshValues();
+        Save();
     }
 
     public void ClosePanel()
@@ -218,19 +370,39 @@ public sealed class DisplaySettings
     void ResetAll()
     {
         Crisp = true;
+        SetOrdinaryCustomerBeauty(true);
+        PortraitSize = "medium";
         PortraitScale = 1;
         PortraitX = PortraitY = BubbleX = BubbleY = NameX = NameY = 0;
-        ResetPortrait();
+        BubbleFlipY = false;
+
         RefreshValues();
         Save();
     }
 
+    void RefreshNameLock()
+    {
+        if (window == null || !window.IsAlive) return;
+        foreach (var id in new[] { "nx", "ny", "i_nx", "i_ny" })
+            window.Get(id)?.SetInteractable(!BubbleFlipY);
+        window.Get("name_locked")?.SetVisible(BubbleFlipY);
+    }
+
     void RefreshValues()
     {
-        foreach (var (id, value) in new[] { ("bx", BubbleX), ("by", BubbleY), ("nx", NameX), ("ny", NameY), ("ps", PortraitScale), ("px", PortraitX), ("py", PortraitY) })
+        RefreshNameLock();
+        window?.Get("size_current")?.SetText(SizeLabel());
+        window?.Get("bubble_flip")?.SetBool(BubbleFlipY);
+        window?.Get("ordinary_beauty")?.SetBool(OrdinaryCustomerBeauty);
+        window?.Get("crisp")?.SetBool(Crisp);
+        window?.Get("xiaoxiao_visits")?.SetBool(XiaoxiaoVisitsEnabled);
+        window?.Get("guide_pending")?.SetBool(GuidePending);
+        foreach (var (id, value) in new[] { ("bx", BubbleX), ("by", BubbleY),  ("ps", PortraitScale), ("px", PortraitX), ("py", PortraitY) })
         {
             if (window == null || !window.IsAlive) return;
-            window.Get("v_" + id)?.SetText(Fmt(value));
+            window.Get("i_" + id)?.SetString(Fmt(id, value));
+            window.Get("v_" + id)?.SetText(Fmt(id, value));
+            window.Get(id)?.SetFloat(value);   // keep the handle in sync after a reset
         }
     }
 
@@ -239,18 +411,56 @@ public sealed class DisplaySettings
         target.BeginRow(6f, TextAnchor.MiddleLeft);
         target.AddLabel(label, null);
         Fix(target.Last, 64f);
-        target.AddLabel(Fmt(value), "v_" + id);
-        Fix(target.Last, 48f);
+        // A wide slider cannot give fine steps with the mouse, so the number next to it is editable.
+        target.AddInput("", Fmt(id, value), text =>
+        {
+            if (!float.TryParse(text, NumberStyles.Float, CultureInfo.InvariantCulture, out var typed))
+            {
+                Refresh(id);
+                return;
+            }
+            var snapped = Snap(id, Mathf.Clamp(typed, min, max));
+            onChanged(snapped);
+            var slider = window != null && window.IsAlive ? window.Get(id) : null;
+            if (slider != null) slider.SetFloat(snapped);
+            Refresh(id);
+        }, "i_" + id);
+        Fix(target.Last, 72f);
         target.AddSlider(min, max, value, changed =>
         {
-            onChanged(changed);
-            if (window != null && window.IsAlive) window.Get("v_" + id)?.SetText(Fmt(changed));
+            var snapped = Snap(id, changed);
+            onChanged(snapped);
+            Refresh(id);
         }, false, id);
-        Fix(target.Last, 250f);
+        Fix(target.Last, 240f);
         target.End();
     }
 
-    static string Fmt(float value) => value.ToString("0");
+    float Current(string id) => id switch
+    {
+        "bx" => BubbleX, "by" => BubbleY, "nx" => NameX, "ny" => NameY,
+        "ps" => PortraitScale, "px" => PortraitX, "py" => PortraitY, _ => 0f,
+    };
+
+    void Refresh(string id)
+    {
+        if (window == null || !window.IsAlive) return;
+        var text = Fmt(id, Current(id));
+        window.Get("i_" + id)?.SetString(text);
+        window.Get("v_" + id)?.SetText(text);
+    }
+
+    /// <summary>Scale needs decimals; a whole-number format turned 1.05 into 1 and 1.5 into 2.</summary>
+    static string Fmt(string id, float value) =>
+        value.ToString(id is "ps" or "px" or "py" ? "0.00" : "0");
+
+    /// <summary>Keep the displayed value and fine slider steps consistent.</summary>
+    static float Snap(string id, float value) => id switch
+    {
+        "ps" => (float)Math.Round(value, 2),
+        "px" or "py" => (float)Math.Round(value, 2),
+        _ => (float)Math.Round(value),
+    };
 
     static void Fix(CustomUIElement element, float width)
     {
@@ -272,3 +482,11 @@ static class GameAccess
         return field?.GetValue(EmporiumEntry.Instance);
     }
 }
+
+
+
+
+
+
+
+

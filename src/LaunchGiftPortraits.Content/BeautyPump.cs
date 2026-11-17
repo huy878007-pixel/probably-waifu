@@ -28,7 +28,9 @@ public sealed class BeautyPump : MonoBehaviour
         if (!Ready()) return;
         var settings = BeautyContentMod.Settings;
         if (settings == null) return;
-        if (PortraitPolicy.LastPath != null && !CoreBridge.IsApplied()) PortraitPolicy.Reassert();
+        // Only repair the game's own resets. When another Mod (multiplayer avatars) owns the
+        // renderer, yield instead of painting our previous character over it.
+        if (PortraitPolicy.LastPath != null && !CoreBridge.IsApplied() && !CoreBridge.IsForeign()) PortraitPolicy.Reassert();
         settings.CaptureBubble(DialogUIManager.Instance);
         settings.Apply(PortraitPolicy.LastPath != null);
     }

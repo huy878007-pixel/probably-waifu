@@ -44,8 +44,11 @@ public sealed class BeautyContentMod : IMod
         if (CoreBridge.Bound) return true;
         if (!CoreBridge.Bind()) return false;
         settings ??= LoadSettings();
+        ModSettingsBridge.Register();
+        PortraitLayoutPolicy.Update();
         SpritePresenter.Bind();
         SpecialTargets.Refresh();
+        XiaoxiaoRuntime.Bind();
         try { CoreBridge.Sync(); } catch (Exception e) { Warn("Catch-up failed: " + e.Message); }
         Warn("Bound to the core runtime; " + Diagnostic());
         return true;
@@ -53,6 +56,8 @@ public sealed class BeautyContentMod : IMod
 
     public void OnDisable()
     {
+        CoreBridge.ConfigureLayout(null);
+        PortraitLayoutPolicy.Reset();
         SpecialTargets.Restore();
         SpritePresenter.Unbind();
         if (host != null) { UObj.Destroy(host); host = null; }
@@ -91,9 +96,12 @@ public sealed class BeautyContentMod : IMod
 
     /// <summary>Diagnostics for the runtime log and the offline contract test.</summary>
     public static string Diagnostic() => "bound=" + CoreBridge.Bound + " version=" + CoreBridge.Version
-        + " subscribers=" + CoreBridge.Subscribers + " pump=" + (BeautyPump.Instance != null) + " last=" + CoreBridge.LastEvent;
+        + " subscribers=" + CoreBridge.Subscribers + " pump=" + (BeautyPump.Instance != null) + " last=" + CoreBridge.LastEvent
+        + " xiaoxiao=[" + XiaoxiaoRuntime.Diagnostic() + "]";
     public static bool BridgeReady => CoreBridge.Bound;
     public static string LastEvent => CoreBridge.LastEvent;
+    /// <summary>Content rules exercised by the offline contract test through reflection.</summary>
+    public static int GiftChance(int paidVisits, int failures) => XiaoxiaoRuntime.GiftChance(paidVisits, failures);
 
     internal static void Warn(string text) { try { Debug.Log("[LaunchGiftPortraits] " + text); } catch (Exception) { } }
 }

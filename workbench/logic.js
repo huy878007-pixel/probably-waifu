@@ -164,8 +164,8 @@
         ids[ev.id] = 1;
         byId[ev.id] = ev;
         (ev.lines || []).forEach(function (l) {
-          keyOwner[l.key] = c.key;
-          if (!keyToEv[l.key]) keyToEv[l.key] = ev.id;
+          (keyOwner[l.key] || (keyOwner[l.key] = {}))[c.key] = true;
+          if (!keyToEv[c.key + '/' + l.key]) keyToEv[c.key + '/' + l.key] = ev.id;
         });
       });
       evIds[c.key] = ids;
@@ -180,7 +180,7 @@
       if (src.lines && typeof src.lines === 'object' && !Array.isArray(src.lines)) {
         Object.keys(src.lines).forEach(function (k) {
           if (!src.lines[k]) return;
-          if (keyOwner[k] && keyOwner[k] !== ck) { lostLines.push(ck + '/' + k); return; }
+          if (keyOwner[k] && !keyOwner[k][ck]) { lostLines.push(ck + '/' + k); return; }
           dst.lines[k] = src.lines[k];
         });
         Object.keys(src.events || {}).forEach(function (e) {
@@ -200,7 +200,7 @@
         var v = src[evId] || {};
         var evLines = v.lines || {};
         Object.keys(evLines).forEach(function (lk) {
-          if (!keyOwner[lk]) { lostLines.push(ck + '/' + lk); return; }
+          if (!keyOwner[lk] || !keyOwner[lk][ck]) { lostLines.push(ck + '/' + lk); return; }
           if (dst.lines[lk] == null) { dst.lines[lk] = evLines[lk]; moved++; }
         });
         if (!v.enter && !v.exit && !v.exitArrest) return;
@@ -208,7 +208,7 @@
         if (!target) {                       // 老的分段 id（如 lun/visit）→ 用台词投票
           var votes = {};
           Object.keys(evLines).forEach(function (lk) {
-            var ev = keyToEv[lk];
+            var ev = keyToEv[ck + '/' + lk];
             if (ev) votes[ev] = (votes[ev] || 0) + 1;
           });
           target = Object.keys(votes).sort(function (a, b) { return votes[b] - votes[a]; })[0] || null;

@@ -1,0 +1,489 @@
+{
+  "format": "portrait-pack/1",
+  "id": "visitors-v2",
+  "name": "深空娘化 · 客人差分",
+  "priority": 90,
+  "characters": {
+    "femaleChef1": {
+      "identifiers": [
+        "femaleChef1"
+      ],
+      "base": "portraits/femaleChef1/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleChef1/开心_原图.png",
+        "mood:平静": "portraits/femaleChef1/平静.png",
+        "mood:不开心": "portraits/femaleChef1/不开心.png",
+        "mood:愤怒": "portraits/femaleChef1/愤怒.png",
+        "mood:欢喜": "portraits/femaleChef1/欢喜.png"
+      }
+    },
+    "femaleChef2": {
+      "identifiers": [
+        "femaleChef2"
+      ],
+      "base": "portraits/femaleChef2/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleChef2/开心_原图.png",
+        "mood:平静": "portraits/femaleChef2/平静.png",
+        "mood:不开心": "portraits/femaleChef2/不开心.png",
+        "mood:愤怒": "portraits/femaleChef2/愤怒.png",
+        "mood:欢喜": "portraits/femaleChef2/欢喜.png"
+      }
+    },
+    "femaleRev6": {
+      "identifiers": [
+        "femaleRev6"
+      ],
+      "base": "portraits/femaleRev6/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleRev6/开心_原图.png",
+        "mood:平静": "portraits/femaleRev6/平静.png",
+        "mood:不开心": "portraits/femaleRev6/不开心.png",
+        "mood:愤怒": "portraits/femaleRev6/愤怒.png",
+        "mood:欢喜": "portraits/femaleRev6/欢喜.png"
+      }
+    },
+    "femaleRev7": {
+      "identifiers": [
+        "femaleRev7"
+      ],
+      "base": "portraits/femaleRev7/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleRev7/开心_原图.png",
+        "mood:平静": "portraits/femaleRev7/平静.png",
+        "mood:不开心": "portraits/femaleRev7/不开心.png",
+        "mood:愤怒": "portraits/femaleRev7/愤怒.png",
+        "mood:欢喜": "portraits/femaleRev7/欢喜.png"
+      }
+    },
+    "femaleEng2": {
+      "identifiers": [
+        "femaleEng2"
+      ],
+      "base": "portraits/femaleEng2/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleEng2/开心_原图.png",
+        "mood:平静": "portraits/femaleEng2/平静.png",
+        "mood:不开心": "portraits/femaleEng2/不开心.png",
+        "mood:愤怒": "portraits/femaleEng2/愤怒.png",
+        "mood:欢喜": "portraits/femaleEng2/欢喜.png"
+      }
+    },
+    "femaleRev1": {
+      "identifiers": [
+        "femaleRev1"
+      ],
+      "base": "portraits/femaleRev1/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleRev1/开心_原图.png",
+        "mood:平静": "portraits/femaleRev1/平静.png",
+        "mood:不开心": "portraits/femaleRev1/不开心.png",
+        "mood:愤怒": "portraits/femaleRev1/愤怒.png",
+        "mood:欢喜": "portraits/femaleRev1/欢喜.png"
+      }
+    },
+    "femaleRev2": {
+      "identifiers": [
+        "femaleRev2"
+      ],
+      "base": "portraits/femaleRev2/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleRev2/开心_原图.png",
+        "mood:平静": "portraits/femaleRev2/平静.png",
+        "mood:不开心": "portraits/femaleRev2/不开心.png",
+        "mood:愤怒": "portraits/femaleRev2/愤怒.png",
+        "mood:欢喜": "portraits/femaleRev2/欢喜.png"
+      }
+    },
+    "femaleRev3": {
+      "identifiers": [
+        "femaleRev3"
+      ],
+      "base": "portraits/femaleRev3/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleRev3/开心_原图.png",
+        "mood:平静": "portraits/femaleRev3/平静.png",
+        "mood:不开心": "portraits/femaleRev3/不开心.png",
+        "mood:愤怒": "portraits/femaleRev3/愤怒.png",
+        "mood:欢喜": "portraits/femaleRev3/欢喜.png"
+      }
+    },
+    "femaleRev4": {
+      "identifiers": [
+        "femaleRev4"
+      ],
+      "base": "portraits/femaleRev4/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleRev4/开心_原图.png",
+        "mood:平静": "portraits/femaleRev4/平静.png",
+        "mood:不开心": "portraits/femaleRev4/不开心.png",
+        "mood:愤怒": "portraits/femaleRev4/愤怒.png",
+        "mood:欢喜": "portraits/femaleRev4/欢喜.png"
+      }
+    },
+    "femaleRev5": {
+      "identifiers": [
+        "femaleRev5"
+      ],
+      "base": "portraits/femaleRev5/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleRev5/开心_原图.png",
+        "mood:平静": "portraits/femaleRev5/平静.png",
+        "mood:不开心": "portraits/femaleRev5/不开心.png",
+        "mood:愤怒": "portraits/femaleRev5/愤怒.png",
+        "mood:欢喜": "portraits/femaleRev5/欢喜.png"
+      }
+    },
+    "femaleEng1": {
+      "identifiers": [
+        "femaleEng1"
+      ],
+      "base": "portraits/femaleEng1/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleEng1/开心_原图.png",
+        "mood:平静": "portraits/femaleEng1/平静.png",
+        "mood:不开心": "portraits/femaleEng1/不开心.png",
+        "mood:愤怒": "portraits/femaleEng1/愤怒.png",
+        "mood:欢喜": "portraits/femaleEng1/欢喜.png"
+      }
+    },
+    "femaleMerc1": {
+      "identifiers": [
+        "femaleMerc1"
+      ],
+      "base": "portraits/femaleMerc1/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleMerc1/开心_原图.png",
+        "mood:平静": "portraits/femaleMerc1/平静.png",
+        "mood:不开心": "portraits/femaleMerc1/不开心.png",
+        "mood:愤怒": "portraits/femaleMerc1/愤怒.png",
+        "mood:欢喜": "portraits/femaleMerc1/欢喜.png"
+      }
+    },
+    "femaleMerc2": {
+      "identifiers": [
+        "femaleMerc2"
+      ],
+      "base": "portraits/femaleMerc2/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleMerc2/开心_原图.png",
+        "mood:平静": "portraits/femaleMerc2/平静.png",
+        "mood:不开心": "portraits/femaleMerc2/不开心.png",
+        "mood:愤怒": "portraits/femaleMerc2/愤怒.png",
+        "mood:欢喜": "portraits/femaleMerc2/欢喜.png"
+      }
+    },
+    "femaleMerc3": {
+      "identifiers": [
+        "femaleMerc3"
+      ],
+      "base": "portraits/femaleMerc3/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleMerc3/开心_原图.png",
+        "mood:平静": "portraits/femaleMerc3/平静.png",
+        "mood:不开心": "portraits/femaleMerc3/不开心.png",
+        "mood:愤怒": "portraits/femaleMerc3/愤怒.png",
+        "mood:欢喜": "portraits/femaleMerc3/欢喜.png"
+      }
+    },
+    "femaleMerc4": {
+      "identifiers": [
+        "femaleMerc4"
+      ],
+      "base": "portraits/femaleMerc4/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleMerc4/开心_原图.png",
+        "mood:平静": "portraits/femaleMerc4/平静.png",
+        "mood:不开心": "portraits/femaleMerc4/不开心.png",
+        "mood:愤怒": "portraits/femaleMerc4/愤怒.png",
+        "mood:欢喜": "portraits/femaleMerc4/欢喜.png"
+      }
+    },
+    "femaleBM5": {
+      "identifiers": [
+        "femaleBM5"
+      ],
+      "base": "portraits/femaleBM5/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleBM5/开心_原图.png",
+        "mood:平静": "portraits/femaleBM5/平静.png",
+        "mood:不开心": "portraits/femaleBM5/不开心.png",
+        "mood:愤怒": "portraits/femaleBM5/愤怒.png",
+        "mood:欢喜": "portraits/femaleBM5/欢喜.png"
+      }
+    },
+    "femaleSci1": {
+      "identifiers": [
+        "femaleSci1"
+      ],
+      "base": "portraits/femaleSci1/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleSci1/开心_原图.png",
+        "mood:平静": "portraits/femaleSci1/平静.png",
+        "mood:不开心": "portraits/femaleSci1/不开心.png",
+        "mood:愤怒": "portraits/femaleSci1/愤怒.png",
+        "mood:欢喜": "portraits/femaleSci1/欢喜.png"
+      }
+    },
+    "femaleSci2": {
+      "identifiers": [
+        "femaleSci2"
+      ],
+      "base": "portraits/femaleSci2/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleSci2/开心_原图.png",
+        "mood:平静": "portraits/femaleSci2/平静.png",
+        "mood:不开心": "portraits/femaleSci2/不开心.png",
+        "mood:愤怒": "portraits/femaleSci2/愤怒.png",
+        "mood:欢喜": "portraits/femaleSci2/欢喜.png"
+      }
+    },
+    "femaleBM1": {
+      "identifiers": [
+        "femaleBM1"
+      ],
+      "base": "portraits/femaleBM1/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleBM1/开心_原图.png",
+        "mood:平静": "portraits/femaleBM1/平静.png",
+        "mood:不开心": "portraits/femaleBM1/不开心.png",
+        "mood:愤怒": "portraits/femaleBM1/愤怒.png",
+        "mood:欢喜": "portraits/femaleBM1/欢喜.png"
+      }
+    },
+    "femaleBM2": {
+      "identifiers": [
+        "femaleBM2"
+      ],
+      "base": "portraits/femaleBM2/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleBM2/开心_原图.png",
+        "mood:平静": "portraits/femaleBM2/平静.png",
+        "mood:不开心": "portraits/femaleBM2/不开心.png",
+        "mood:愤怒": "portraits/femaleBM2/愤怒.png",
+        "mood:欢喜": "portraits/femaleBM2/欢喜.png"
+      }
+    },
+    "femaleBM3": {
+      "identifiers": [
+        "femaleBM3"
+      ],
+      "base": "portraits/femaleBM3/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleBM3/开心_原图.png",
+        "mood:平静": "portraits/femaleBM3/平静.png",
+        "mood:不开心": "portraits/femaleBM3/不开心.png",
+        "mood:愤怒": "portraits/femaleBM3/愤怒.png",
+        "mood:欢喜": "portraits/femaleBM3/欢喜.png"
+      }
+    },
+    "femaleBM4": {
+      "identifiers": [
+        "femaleBM4"
+      ],
+      "base": "portraits/femaleBM4/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleBM4/开心_原图.png",
+        "mood:平静": "portraits/femaleBM4/平静.png",
+        "mood:不开心": "portraits/femaleBM4/不开心.png",
+        "mood:愤怒": "portraits/femaleBM4/愤怒.png",
+        "mood:欢喜": "portraits/femaleBM4/欢喜.png"
+      }
+    },
+    "femaleUpper12": {
+      "identifiers": [
+        "femaleUpper12"
+      ],
+      "base": "portraits/femaleUpper12/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleUpper12/开心_原图.png",
+        "mood:平静": "portraits/femaleUpper12/平静.png",
+        "mood:不开心": "portraits/femaleUpper12/不开心.png",
+        "mood:愤怒": "portraits/femaleUpper12/愤怒.png",
+        "mood:欢喜": "portraits/femaleUpper12/欢喜.png"
+      }
+    },
+    "femaleUpper13": {
+      "identifiers": [
+        "femaleUpper13"
+      ],
+      "base": "portraits/femaleUpper13/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleUpper13/开心_原图.png",
+        "mood:平静": "portraits/femaleUpper13/平静.png",
+        "mood:不开心": "portraits/femaleUpper13/不开心.png",
+        "mood:愤怒": "portraits/femaleUpper13/愤怒.png",
+        "mood:欢喜": "portraits/femaleUpper13/欢喜.png"
+      }
+    },
+    "femaleSecCorpo1": {
+      "identifiers": [
+        "femaleSecCorpo1"
+      ],
+      "base": "portraits/femaleSecCorpo1/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleSecCorpo1/开心_原图.png",
+        "mood:平静": "portraits/femaleSecCorpo1/平静.png",
+        "mood:不开心": "portraits/femaleSecCorpo1/不开心.png",
+        "mood:愤怒": "portraits/femaleSecCorpo1/愤怒.png",
+        "mood:欢喜": "portraits/femaleSecCorpo1/欢喜.png"
+      }
+    },
+    "femaleSecCorpo2": {
+      "identifiers": [
+        "femaleSecCorpo2"
+      ],
+      "base": "portraits/femaleSecCorpo2/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleSecCorpo2/开心_原图.png",
+        "mood:平静": "portraits/femaleSecCorpo2/平静.png",
+        "mood:不开心": "portraits/femaleSecCorpo2/不开心.png",
+        "mood:愤怒": "portraits/femaleSecCorpo2/愤怒.png",
+        "mood:欢喜": "portraits/femaleSecCorpo2/欢喜.png"
+      }
+    },
+    "femaleFarmer1": {
+      "identifiers": [
+        "femaleFarmer1"
+      ],
+      "base": "portraits/femaleFarmer1/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleFarmer1/开心_原图.png",
+        "mood:平静": "portraits/femaleFarmer1/平静.png",
+        "mood:不开心": "portraits/femaleFarmer1/不开心.png",
+        "mood:愤怒": "portraits/femaleFarmer1/愤怒.png",
+        "mood:欢喜": "portraits/femaleFarmer1/欢喜.png"
+      }
+    },
+    "femaleFarmer2": {
+      "identifiers": [
+        "femaleFarmer2"
+      ],
+      "base": "portraits/femaleFarmer2/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/femaleFarmer2/开心_原图.png",
+        "mood:平静": "portraits/femaleFarmer2/平静.png",
+        "mood:不开心": "portraits/femaleFarmer2/不开心.png",
+        "mood:愤怒": "portraits/femaleFarmer2/愤怒.png",
+        "mood:欢喜": "portraits/femaleFarmer2/欢喜.png"
+      }
+    },
+    "admin": {
+      "identifiers": [
+        "admin"
+      ],
+      "base": "portraits/admin/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/admin/开心_原图.png",
+        "mood:平静": "portraits/admin/平静.png",
+        "mood:不开心": "portraits/admin/不开心.png",
+        "mood:愤怒": "portraits/admin/愤怒.png",
+        "mood:欢喜": "portraits/admin/欢喜.png"
+      }
+    },
+    "cartel_handler": {
+      "identifiers": [
+        "cartel_handler"
+      ],
+      "base": "portraits/cartel_handler/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/cartel_handler/开心_原图.png",
+        "mood:平静": "portraits/cartel_handler/平静.png",
+        "mood:不开心": "portraits/cartel_handler/不开心.png",
+        "mood:愤怒": "portraits/cartel_handler/愤怒.png",
+        "mood:欢喜": "portraits/cartel_handler/欢喜.png"
+      }
+    },
+    "courrier": {
+      "identifiers": [
+        "courrier"
+      ],
+      "base": "portraits/courrier/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/courrier/开心_原图.png",
+        "mood:平静": "portraits/courrier/平静.png",
+        "mood:不开心": "portraits/courrier/不开心.png",
+        "mood:愤怒": "portraits/courrier/愤怒.png",
+        "mood:欢喜": "portraits/courrier/欢喜.png"
+      }
+    },
+    "merchant": {
+      "identifiers": [
+        "merchant"
+      ],
+      "base": "portraits/merchant/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/merchant/开心_原图.png",
+        "mood:平静": "portraits/merchant/平静.png",
+        "mood:不开心": "portraits/merchant/不开心.png",
+        "mood:愤怒": "portraits/merchant/愤怒.png",
+        "mood:欢喜": "portraits/merchant/欢喜.png"
+      }
+    },
+    "retired_aquafarmer": {
+      "identifiers": [
+        "retired_aquafarmer"
+      ],
+      "base": "portraits/retired_aquafarmer/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/retired_aquafarmer/开心_原图.png",
+        "mood:平静": "portraits/retired_aquafarmer/平静.png",
+        "mood:不开心": "portraits/retired_aquafarmer/不开心.png",
+        "mood:愤怒": "portraits/retired_aquafarmer/愤怒.png",
+        "mood:欢喜": "portraits/retired_aquafarmer/欢喜.png"
+      }
+    },
+    "retired_chemist": {
+      "identifiers": [
+        "retired_chemist"
+      ],
+      "base": "portraits/retired_chemist/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/retired_chemist/开心_原图.png",
+        "mood:平静": "portraits/retired_chemist/平静.png",
+        "mood:不开心": "portraits/retired_chemist/不开心.png",
+        "mood:愤怒": "portraits/retired_chemist/愤怒.png",
+        "mood:欢喜": "portraits/retired_chemist/欢喜.png"
+      }
+    },
+    "retired_farmer": {
+      "identifiers": [
+        "retired_farmer"
+      ],
+      "base": "portraits/retired_farmer/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/retired_farmer/开心_原图.png",
+        "mood:平静": "portraits/retired_farmer/平静.png",
+        "mood:不开心": "portraits/retired_farmer/不开心.png",
+        "mood:愤怒": "portraits/retired_farmer/愤怒.png",
+        "mood:欢喜": "portraits/retired_farmer/欢喜.png"
+      }
+    },
+    "sawyer": {
+      "identifiers": [
+        "sawyer"
+      ],
+      "base": "portraits/sawyer/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/sawyer/开心_原图.png",
+        "mood:平静": "portraits/sawyer/平静.png",
+        "mood:不开心": "portraits/sawyer/不开心.png",
+        "mood:愤怒": "portraits/sawyer/愤怒.png",
+        "mood:欢喜": "portraits/sawyer/欢喜.png"
+      }
+    },
+    "shadyMerchant": {
+      "identifiers": [
+        "shadyMerchant"
+      ],
+      "base": "portraits/shadyMerchant/开心_原图.png",
+      "variants": {
+        "mood:开心_原图": "portraits/shadyMerchant/开心_原图.png",
+        "mood:平静": "portraits/shadyMerchant/平静.png",
+        "mood:不开心": "portraits/shadyMerchant/不开心.png",
+        "mood:愤怒": "portraits/shadyMerchant/愤怒.png",
+        "mood:欢喜": "portraits/shadyMerchant/欢喜.png"
+      }
+    }
+  }
+}

@@ -311,7 +311,7 @@
     var groups = [];
     var base = c.portraits.filter(function (p) { return p.kind === 'base'; });
     var released = c.portraits.filter(function(p) { return p.release; });
-    if (released.length) groups.push(['发布版 · 语义复核（当前默认）', released]);
+    if (released.length) groups.push(['旧版参考图 · 请与运行包对照', released]);
     if (base.length) groups.push(['基础立绘（初版）', base]);
     var sheets = {};
     c.portraits.filter(function (p) { return p.kind === 'story' && !p.release; }).forEach(function (p) {
@@ -343,6 +343,13 @@
     $('btnUndo').disabled = !undoStack.length; $('btnRedo').disabled = !redoStack.length;
   }
   function renderSelection() {
+    var review = reviewLines();
+    var number = review.findIndex(function (chip) {
+      return sel && !sel.slot && sel.ev === chip.dataset.ev && sel.lks[0] === chip.dataset.lk;
+    });
+    $('prevLine').disabled = number <= 0;
+    $('nextLine').disabled = !review.length || number === review.length - 1;
+    $('linePosition').textContent = (number < 0 ? '—' : number + 1) + ' / ' + review.length;
     var box = $('selectionInfo');
     if (!sel) { box.innerHTML = '<b>选中详情</b><p>选择一句台词，核对场景、触发条件和当前配图。带“复用”标记的台词会按场景单独保存。</p>'; return; }
     var ev = curEvent(sel.ev); if (!ev) { box.innerHTML = ''; return; }
@@ -355,8 +362,9 @@
       (id ? '<img class="detail-image" src="' + esc(thumb(id,'p')) + '" alt="当前场景配图">' : '') +
       '<p>' + esc(line ? line.zh : sel.slot === 'enter' ? '入场变体' : '退场变体') + '</p>' +
       '<code>' + esc(line ? line.key : ev.id) + '</code>' +
+      '<div class="detail-meta">场景 ID：' + esc(ev.id) + '</div>' +
       '<div class="detail-meta">' + esc(p ? p.label : '未配图') + ' · ' + (line && getLine(line.key,ev.id) ? '手工指定' : '默认配图') + '</div>' +
-      (line && getLine(line.key,ev.id) && !L.samePortrait(D,getLine(line.key,ev.id),line.def) ? '<div class="reference"><span>复核默认图（供对照）</span><img src="' + esc(thumb(line.def,'p')) + '" alt="复核默认配图"><small>不同不代表错误，请核对服装与当前剧情。</small></div>' : '') +
+      (line && getLine(line.key,ev.id) && !L.samePortrait(D,getLine(line.key,ev.id),line.def) ? '<div class="reference"><span>旧版参考图（供对照）</span><img src="' + esc(thumb(line.def,'p')) + '" alt="旧版参考配图"><small>不同不代表错误，当前运行包配图见人工审阅。</small></div>' : '') +
       (records.length > 1 ? '<p>已选 ' + records.length + ' 句；点立绘将应用到所选台词。</p>' : '') +
       (line && (line.condHuman || line.cond || ev.routeCondition) ? '<p>条件：' + esc(line.condHuman || line.cond || ev.routeCondition) + '</p>' : '') +
       (inherited ? '<p class="warning">沿用旧版全局标注；此台词还在其他场景出现。重新选图只修改本场景。</p>' : '') +
@@ -469,6 +477,29 @@
     flash('已把这张图套到「' + c.name + '」全部 ' + n + ' 句');
   }
   /* ---------- 交互 ---------- */
+  function reviewLines() {
+    return Array.from($('events').querySelectorAll('.chip:not(.ghost)')).filter(function (chip) {
+      return chip.getClientRects().length > 0;
+    });
+  }
+
+  function moveReview(delta) {
+    var chips = reviewLines();
+    var index = chips.findIndex(function (chip) {
+      return sel && !sel.slot && sel.ev === chip.dataset.ev && sel.lks[0] === chip.dataset.lk;
+    });
+    var chip = chips[index + delta];
+    if (!chip) return;
+    selectChip(chip, curEvent(chip.dataset.ev), false);
+    chip.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  }
+  $('prevLine').onclick = function () { moveReview(-1); };
+  $('nextLine').onclick = function () { moveReview(1); };
+  $('openEleanor').onclick = function () {
+    var entry = $('charList').querySelector('[data-ck="eleanor"]');
+    if (entry) { $('resetFilters').click(); entry = $('charList').querySelector('[data-ck="eleanor"]'); entry.click(); }
+  };
+
   $('charList').addEventListener('click', function (e) {
     var el = e.target.closest('.char');
     if (!el) return;
@@ -753,6 +784,7 @@
     }
   });
   document.addEventListener('keydown', function(e) {
+    if (window.WBReviewOpen) return;
     var typing = document.activeElement && (document.activeElement.matches('input,textarea,select') || document.activeElement.isContentEditable);
     if ((e.ctrlKey || e.metaKey) && !typing) {
       var key = e.key.toLowerCase();
@@ -834,10 +866,21 @@
   /* ---------- 启动 ---------- */
   load();
   saveState(storageBlocked ? '读取异常 · 原数据已保护' : '已读取 · 本地自动保存', storageBlocked);
-  $('buildTag').textContent = '2.0 · Build ' + (D.build || '?');
+  $('buildTag').textContent = '人工审阅版 · 旧台词 ' + (D.build || '?') + (window.WB_SOURCE ? ' / 源码补漏 ' + window.WB_SOURCE.build : '');
   var first = D.characters.filter(function (c) { return c.events.length; })[0] || D.characters[0];
-  cur = first ? first.key : null;
+  cur = byKey[location.hash.slice(1)] ? location.hash.slice(1) : first ? first.key : null;
   refresh();
 
-  window.__WB__ = { D: D, logic: L, flushSave: flushSave, get map() { return map; }, set map(v) { map = v; refresh(); } };
+  window.__WB__ = { D: D, logic: L, flushSave: flushSave, get map() { return map; }, set map(v) { map = v; refresh(); },
+    reviewSelection: function () { return { character: cur, selection: sel && JSON.parse(JSON.stringify(sel)) }; },
+    assignReviewed: function (ck, evId, target, id) {
+      if (ck !== cur || !curEvent(evId) || !byKey[ck].portraits.some(function(p) { return p.id === id; })) return false;
+      var ev = curEvent(evId);
+      if (ev.foreign || (!target.slot && !ev.lines.some(function(l) { return l.spk === 'char' && l.key === target.key; }))) return false;
+      if (target.slot && !(['enter','exit'].indexOf(target.slot) >= 0 &&
+          (target.slot === 'enter' ? L.entryList(map,ck,ev) : L.exitList(map,ck,ev))[target.idx])) return false;
+      sel = target.slot ? {ev:evId,slot:target.slot,idx:target.idx} : {ev:evId,lks:[target.key]};
+      focusEv = evId; applyPortrait(id); return flushSave();
+    }
+  };
 })();

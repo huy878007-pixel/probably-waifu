@@ -33,12 +33,15 @@ static class SpritePresenter
 
     static string Ask(string key)
     {
-        var reply = CoreBridge.Lookup(JsonConvert.SerializeObject(new { sprite = key }));
+        var reply = key.StartsWith("security:", StringComparison.Ordinal)
+            ? CoreBridge.Lookup(JsonConvert.SerializeObject(new { identity = "visitor:ordinary:" + key.Substring(9), spriteKey = "mood:不开心" }))
+            : CoreBridge.Lookup(JsonConvert.SerializeObject(new { sprite = key }));
         if (string.IsNullOrEmpty(reply)) return null;
         try
         {
             var answer = JObject.Parse(reply);
             if (answer.Value<bool?>("ok") != true) return null;
+            if (!CustomerBeautyPolicy.ShouldReplace(Text(answer, "pack"), Text(answer, "character"))) return null;
             var pack = Text(answer, "pack");
             var path = Text(answer, "path");
             return pack != null && path != null ? pack + "|" + path : null;
